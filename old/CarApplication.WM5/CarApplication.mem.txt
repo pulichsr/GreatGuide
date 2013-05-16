@@ -1,0 +1,178 @@
+6/29/2011 5:11:14 PM:UiThread(103612934):CarApplication:Initialising 0%...
+6/29/2011 5:11:14 PM:UiThread(103612934):CarApplication:Get DeviceServices
+6/29/2011 5:11:14 PM:UiThread(103612934):CarApplication:Loading DAL
+6/29/2011 5:11:15 PM:UiThread(103612934):CarApplication:Initialising repository
+6/29/2011 5:11:18 PM:UiThread(103612934):CarApplication:Create BLL
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Sync BLL
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Create EventBroker
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Load configuration
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Load plugins
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Loading plugins
+6/29/2011 5:11:19 PM:UiThread(103612934):CarApplication:Loaded plugin ContentManager
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin Destination Manager
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin GPSRawDataRecorder
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin GPSRawDataTranslator
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin MasterAreaTrigger
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin RegionTrigger
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Loaded plugin SirfGps
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Adding LogWriter parameter
+6/29/2011 5:11:20 PM:UiThread(103612934):CarApplication:Initialising plugin: ContentManager
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: Destination Manager
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: GPSRawDataRecorder
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: GPSRawDataTranslator
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: MasterAreaTrigger
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: RegionTrigger
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising plugin: SirfGps
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Loaded plugin TopbandMediaPlayer
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:1 media manager plugins found
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Initialising media manager TopbandMediaPlayer
+6/29/2011 5:11:21 PM:UiThread(103612934):Plugin:Loaded configuration
+6/29/2011 5:11:21 PM:UiThread(103612934):Plugin:Creating and initialising media player
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> Initialise
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> LoadConfiguration
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|  contentBasePath: \ResidentFlash\Content\
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|  executablePath: ResidentFlash2\myshell\
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|  audioExecutable: PvAudio.exe
+6/29/2011 5:11:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|  videoExecutable: PvVideo.exe
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Reset Areas
+6/29/2011 5:11:21 PM:UiThread(103612934):CarApplication:Build form definitions
+6/29/2011 5:11:25 PM:UiThread(103612934):CarApplication:Create BannerAdProvider
+6/29/2011 5:11:25 PM:UiThread(103612934):CarApplication:Creating WelcomeAdProvider
+6/29/2011 5:11:25 PM:UiThread(103612934):CarApplication:Get itinerary
+6/29/2011 5:11:25 PM:UiThread(103612934):CarApplication:Initialisation Complete...
+6/29/2011 5:11:26 PM:UiThread(103612934):frmCarApplication:>> frmCarApplication.ctor
+6/29/2011 5:11:32 PM:UiThread(103612934):frmCarApplication:<< frmCarApplication.ctor
+6/29/2011 5:11:32 PM:UiThread(103612934):frmCarApplication:>> frmCarApplication_Load
+6/29/2011 5:11:41 PM:UiThread(103612934):CarApplication:Loaded plugin GeoBaseNavigator
+6/29/2011 5:11:41 PM:UiThread(103612934):CarApplication:1 navigator plugins found
+6/29/2011 5:11:41 PM:UiThread(103612934):CarApplication:Initialising navigator GeoBaseNavigator
+6/29/2011 5:11:41 PM:UiThread(103612934):Plugin:  MapControl assigned
+6/29/2011 5:11:41 PM:UiThread(103612934):Plugin:  Creating GeoBaseNavigator
+6/29/2011 5:11:41 PM:UiThread(103612934):Plugin:  Initialising GeoBaseNavigator
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|>> Initialise
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|>> LoadConfiguration
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  resourcePath:ResidentFlash\GeoBaseResources\
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  repositoryPath:data\gb.3.7
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  soundPath:langs
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  defaultLanguage:en-US
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  languageInUse:en-US
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  earliestBeforeTurnNotificationDistance:1000
+6/29/2011 5:11:41 PM:CarApplication.GeoBaseGps.EventQueueThread(122683478):GeoBaseGps:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseGps|EventQueueManager thread starting
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  latestBeforeTurnNotificationDistance:0
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|  afterTurnNotificationDistance:50
+6/29/2011 5:11:41 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|MultiRepositoryPath: ResidentFlash\GeoBaseResources\data\gb.3.7
+6/29/2011 5:11:42 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|LanguageRepositoryPath: ResidentFlash\GeoBaseResources\langs
+6/29/2011 5:11:44 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|Adding BeforeTurnNotification(1000,0)
+6/29/2011 5:11:44 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|Adding AfterTurnNotification(50)
+6/29/2011 5:11:44 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|Telogis.GeoBase.Navigation.XmlWaveAnnouncer
+6/29/2011 5:11:44 PM:UiThread(103612934):CarApplication:>>StartupSequence
+6/29/2011 5:11:44 PM:UiThread(103612934):GeoBaseNavigator:Nucleo.GoodGuide.GeoBaseNavigator.GeoBaseNavigator|SetUnits: Metric
+6/29/2011 5:11:44 PM:UiThread(103612934):CarApplication:Loading MasterArea 15
+6/29/2011 5:11:44 PM:UiThread(103612934):CarApplication:>>SetMasterArea
+6/29/2011 5:11:44 PM:UiThread(103612934):CarApplication:>>UpdateMasterArea
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:  BackgroundSaveMasterArea
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:  BackgroundSaveMasterArea
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:  ConfigureMediaManager
+6/29/2011 5:11:45 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|>> MediaPlayerConfigurationHandler
+6/29/2011 5:11:45 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|Setting ContentBasePath to '\ResidentFlash\Content\CapePeninsula\'
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:  BuildDefinitions
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:raising MasterAreaChanged event
+6/29/2011 5:11:45 PM:UiThread(103612934):CarApplication:raising MasterAreaEntered event
+6/29/2011 5:11:50 PM:UiThread(103612934):CarApplication:raised MasterAreaEntered event
+6/29/2011 5:11:50 PM:UiThread(103612934):frmCarApplication:>> frmCarApplication_Activated
+6/29/2011 5:12:08 PM:UiThread(103612934):frmCarApplication:>> frmCarApplication_Activated
+6/29/2011 5:12:15 PM:UiThread(103612934):frmTripRecorder:>> btnPlay_Click
+6/29/2011 5:12:15 PM:UiThread(103612934):frmTripRecorder:Raising TripRecorderControl event
+6/29/2011 5:12:16 PM:UiThread(103612934):CarApplication:>> TripRecorderStateChangeHandler
+6/29/2011 5:12:16 PM:UiThread(103612934):CarApplication:Stopping GPS
+6/29/2011 5:12:17 PM:GpsRawDataRecorder.PlaybackThread(129500430):CarApplication:Fix Valid: True
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|>> MediaPlayerConfigurationHandler
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  ControlState: Play
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  Filename: CCE780.mp3
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  MediaType: Sound
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  FilenameIncludesPath: False
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> Play(CCE780.mp3,False,Sound)
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|Filename excludes path. Adding ContentBasePath: \ResidentFlash\Content\CapePeninsula\
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|MediaFilename: \ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> SetMediaFilename(\ResidentFlash\Content\CapePeninsula\CCE780.mp3,Sound)
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Checking if file \ResidentFlash\Content\CapePeninsula\CCE780.mp3 exists
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|Resetting playEvent
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> RequestAction(Play)
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> PlayActivePlayer
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|  Requested media type: Sound
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|  Current media type: None
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Starting audio player
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerOpen
+6/29/2011 5:10:04 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Starting audio player: ResidentFlash2\myshell\PvAudio.exe
+6/29/2011 5:10:05 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Playing on audio player
+6/29/2011 5:10:05 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerPlay
+6/29/2011 5:10:05 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|AudioPlayerHandle: 1879238432
+6/29/2011 5:10:07 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioStarted
+6/29/2011 5:10:07 PM:UiThread(103612934):CarApplication:>> MediaStateChangeHandler
+6/29/2011 5:10:07 PM:UiThread(103612934):CarApplication:  State:Playing, MediaType:Sound, Filename\ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:10:08 PM:ContentManager.FillerContentThread(115409282):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|playEvent.WaitOne result: True
+6/29/2011 5:10:09 PM:ContentManager.FillerContentThread(115409282):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  Result: Ok
+6/29/2011 5:10:10 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:10 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:11 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:12 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:19 PM:UiThread(103612934):frmCarApplication:>> frmCarApplication_Activated
+6/29/2011 5:10:19 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:20 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:21 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:23 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:25 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|>> MediaPlayerConfigurationHandler
+6/29/2011 5:10:25 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  ControlState: Pause
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> RequestAction(Pause)
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> PauseActivePlayer
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerPause
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|AudioPlayerHandle
+6/29/2011 5:10:25 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioStopped
+6/29/2011 5:10:25 PM:UiThread(103612934):CarApplication:>> MediaStateChangeHandler
+6/29/2011 5:10:25 PM:UiThread(103612934):CarApplication:  State:Stopped, MediaType:Sound, Filename\ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:10:34 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|>> MediaPlayerConfigurationHandler
+6/29/2011 5:10:34 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  ControlState: Play
+6/29/2011 5:10:34 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  Filename: CCE780.mp3
+6/29/2011 5:10:34 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  MediaType: Sound
+6/29/2011 5:10:34 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  FilenameIncludesPath: False
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> Play(CCE780.mp3,False,Sound)
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|Filename excludes path. Adding ContentBasePath: \ResidentFlash\Content\CapePeninsula\
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|MediaFilename: \ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> SetMediaFilename(\ResidentFlash\Content\CapePeninsula\CCE780.mp3,Sound)
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Checking if file \ResidentFlash\Content\CapePeninsula\CCE780.mp3 exists
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|Resetting playEvent
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> RequestAction(Play)
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> PlayActivePlayer
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|  Requested media type: Sound
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|  Current media type: Audio
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Stopping audio player
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerStop
+6/29/2011 5:10:34 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|AudioPlayerHandle
+6/29/2011 5:10:35 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|Playing on audio player
+6/29/2011 5:10:35 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerPlay
+6/29/2011 5:10:35 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|AudioPlayerHandle: 1879238432
+6/29/2011 5:10:38 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|playEvent.WaitOne result: False
+6/29/2011 5:10:38 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  Result: NoResponse
+6/29/2011 5:10:38 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioStopped
+6/29/2011 5:10:38 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioStarted
+6/29/2011 5:10:38 PM:UiThread(103612934):CarApplication:>> MediaStateChangeHandler
+6/29/2011 5:10:38 PM:UiThread(103612934):CarApplication:  State:Playing, MediaType:Sound, Filename\ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:10:38 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:38 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:39 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioPositionChanged
+6/29/2011 5:10:40 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|>> MediaPlayerConfigurationHandler
+6/29/2011 5:10:40 PM:UiThread(103612934):MediaPlayerAdapter:Nucleo.GoodGuide.TopBandMediaPlayer.MediaPlayerAdapter|  ControlState: Pause
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> RequestAction(Pause)
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> PauseActivePlayer
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|>> AudioPlayerPause
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayerManager:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayerManager|AudioPlayerHandle
+6/29/2011 5:10:40 PM:UiThread(103612934):TopbandMediaPlayer:Nucleo.GoodGuide.TopbandMediaPlayer.TopbandMediaPlayer|>> mediaEventManager_AudioStopped
+6/29/2011 5:10:40 PM:UiThread(103612934):CarApplication:>> MediaStateChangeHandler
+6/29/2011 5:10:40 PM:UiThread(103612934):CarApplication:  State:Stopped, MediaType:Sound, Filename\ResidentFlash\Content\CapePeninsula\CCE780.mp3
+6/29/2011 5:12:03 PM:GpsRawDataRecorder.PlaybackThread(129500430):CarApplication:>> TripRecorderStateChangeHandler
+6/29/2011 5:12:03 PM:UiThread(103612934):CarApplication:>> TripRecorderStateChangeHandler
+6/29/2011 5:12:03 PM:GpsRawDataRecorder.PlaybackThread(129500430):CarApplication:Starting GPS
+6/29/2011 5:12:03 PM:UiThread(103612934):CarApplication:Starting GPS

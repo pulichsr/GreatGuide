@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ControlDefinitionDataset" targetNamespace="http://tempuri.org/ControlDefinitionDataset.xsd" xmlns:mstns="http://tempuri.org/ControlDefinitionDataset.xsd" xmlns="http://tempuri.org/ControlDefinitionDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ControlDefinitionDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ControlDefinitionDataset" msprop:Generator_DataSetName="ControlDefinitionDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ControlDefinition" msprop:Generator_UserTableName="ControlDefinition" msprop:Generator_RowDeletedName="ControlDefinitionRowDeleted" msprop:Generator_RowChangedName="ControlDefinitionRowChanged" msprop:Generator_RowClassName="ControlDefinitionRow" msprop:Generator_RowChangingName="ControlDefinitionRowChanging" msprop:Generator_RowEvArgName="ControlDefinitionRowChangeEvent" msprop:Generator_RowEvHandlerName="ControlDefinitionRowChangeEventHandler" msprop:Generator_TableClassName="ControlDefinitionDataTable" msprop:Generator_TableVarName="tableControlDefinition" msprop:Generator_RowDeletingName="ControlDefinitionRowDeleting" msprop:Generator_TablePropName="ControlDefinition">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FormId" msprop:Generator_UserColumnName="FormId" msprop:Generator_ColumnVarNameInTable="columnFormId" msprop:Generator_ColumnPropNameInRow="FormId" msprop:Generator_ColumnPropNameInTable="FormIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Text" msprop:Generator_UserColumnName="Text" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_ColumnPropNameInRow="Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="GraphicResourceName" msprop:Generator_UserColumnName="GraphicResourceName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnGraphicResourceName" msprop:Generator_ColumnPropNameInTable="GraphicResourceNameColumn" msprop:Generator_ColumnPropNameInRow="GraphicResourceName" type="xs:string" minOccurs="0" />
+              <xs:element name="Colour" msprop:Generator_UserColumnName="Colour" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnColour" msprop:Generator_ColumnPropNameInTable="ColourColumn" msprop:Generator_ColumnPropNameInRow="Colour" type="xs:string" minOccurs="0" />
+              <xs:element name="Action" msprop:Generator_UserColumnName="Action" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnAction" msprop:Generator_ColumnPropNameInTable="ActionColumn" msprop:Generator_ColumnPropNameInRow="Action" type="xs:string" minOccurs="0" />
+              <xs:element name="ActionTarget" msprop:Generator_UserColumnName="ActionTarget" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnActionTarget" msprop:Generator_ColumnPropNameInTable="ActionTargetColumn" msprop:Generator_ColumnPropNameInRow="ActionTarget" type="xs:string" minOccurs="0" />
+              <xs:element name="ActionData" msprop:Generator_UserColumnName="ActionData" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnActionData" msprop:Generator_ColumnPropNameInTable="ActionDataColumn" msprop:Generator_ColumnPropNameInRow="ActionData" type="xs:string" minOccurs="0" />
+              <xs:element name="MasterAreaId" msprop:Generator_UserColumnName="MasterAreaId" msprop:Generator_ColumnVarNameInTable="columnMasterAreaId" msprop:Generator_ColumnPropNameInRow="MasterAreaId" msprop:Generator_ColumnPropNameInTable="MasterAreaIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

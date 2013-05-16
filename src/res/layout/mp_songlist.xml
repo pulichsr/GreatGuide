@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_songs_on_SD_Card" />
+
+
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+   
+     
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:text="@string/pause" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="87dp"
+        android:layout_height="34dp"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/btnVolumeDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="@string/decreaseVolume" />
+
+    <Button
+        android:id="@+id/btnVolumeIncrease"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:text="@string/increaseVolume" />
+
+    <Button
+            android:id="@+id/btnPlayVideo"
+            android:layout_width="140dp"
+            android:layout_height="34dp"
+            android:text="@string/playVideo" />
+
+</LinearLayout>

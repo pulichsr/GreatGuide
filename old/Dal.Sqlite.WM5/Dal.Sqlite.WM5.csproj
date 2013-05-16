@@ -1,0 +1,199 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E66D808-5F02-4544-BA39-D0C4A9B345A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo.GoodGuide.Dal.Sqlite</RootNamespace>
+    <AssemblyName>Dal.Sqlite.WM5</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>Dal.Sqlite.WM5</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Data.Sqlite, Version=1.0.4308.26493, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Diagnostics, Version=1.0.4450.24280, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Reflection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.XML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.76.0, Culture=neutral, PublicKeyToken=1fdb50b1b62b4c84, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelContentDal.cs" />
+    <Compile Include="ChannelDal.cs" />
+    <Compile Include="ChannelGroupDal.cs" />
+    <Compile Include="ConfigParameterDal.cs" />
+    <Compile Include="ContentItemDal.cs" />
+    <Compile Include="ControlDefinitionRepository.cs" />
+    <Compile Include="Factories\DestinationFactory.cs" />
+    <Compile Include="SearchRegionRepository.cs" />
+    <Compile Include="DatasetConverters\FormDefinitionConverter.cs" />
+    <Compile Include="Factories\RegionFactory.cs" />
+    <Compile Include="Factories\StreetFactory.cs" />
+    <Compile Include="FormDefinitionRepository.cs" />
+    <Compile Include="DatasetConverters\ControlDefinitionConverter.cs" />
+    <Compile Include="DatasetConverters\RecentDestinationConverter.cs" />
+    <Compile Include="DatasetConverters\MySelectionConverter.cs" />
+    <Compile Include="DatasetConverters\ItineraryDestinationConverter.cs" />
+    <Compile Include="DatasetConverters\ItineraryConverter.cs" />
+    <Compile Include="DatasetConverters\ItineraryDayConverter.cs" />
+    <Compile Include="DatasetConverters\DestinationTypeConverter.cs" />
+    <Compile Include="DatasetConverters\DestinationConverter.cs" />
+    <Compile Include="DatasetConverters\DestinationCollectionConverter.cs" />
+    <Compile Include="DatasetConverters\DestinationCollectionMemberConverter.cs" />
+    <Compile Include="DatasetConverters\DestinationClassificationConverter.cs" />
+    <Compile Include="DestinationClassificationRepository.cs" />
+    <Compile Include="DestinationCollectionMemberRepository.cs" />
+    <Compile Include="DestinationCollectionRepository.cs" />
+    <Compile Include="DestinationRepository.cs" />
+    <Compile Include="DestinationTypeRepository.cs" />
+    <Compile Include="GetHelper.cs" />
+    <Compile Include="GpsRegionDal.cs" />
+    <Compile Include="ItineraryDayRepository.cs" />
+    <Compile Include="ItineraryDestinationRepository.cs" />
+    <Compile Include="ItineraryRepository.cs" />
+    <Compile Include="MasterAreaDal.cs" />
+    <Compile Include="MySelectionRepository.cs" />
+    <Compile Include="RecordReaders\SearchRegionRecordReader.cs" />
+    <Compile Include="RecordReaders\SearchStreetRecordReader.cs" />
+    <Compile Include="SearchKeyWhereClause.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentDestinationRepository.cs" />
+    <Compile Include="RecordReaders\ChannelRecordReader.cs" />
+    <Compile Include="RecordReaders\ChannelContentRecordReader.cs" />
+    <Compile Include="RecordReaders\ChannelGroupRecordReader.cs" />
+    <Compile Include="RecordReaders\ChannelChannelGroupRecordReader.cs" />
+    <Compile Include="RecordReaders\ConfigParameterRecordReader.cs" />
+    <Compile Include="RecordReaders\ContentItemRecordReader.cs" />
+    <Compile Include="RecordReaders\ControlDefinitionRecordReader.cs" />
+    <Compile Include="RecordReaders\ThemeRecordReader.cs" />
+    <Compile Include="RecordReaders\RecentDestinationRecordReader.cs" />
+    <Compile Include="RecordReaders\MySelectionRecordReader.cs" />
+    <Compile Include="RecordReaders\MasterAreaRecordReader.cs" />
+    <Compile Include="RecordReaders\ItineraryDestinationRecordReader.cs" />
+    <Compile Include="RecordReaders\ItineraryDayRecordReader.cs" />
+    <Compile Include="RecordReaders\ItineraryRecordReader.cs" />
+    <Compile Include="RecordReaders\GpsRegionRecordReader.cs" />
+    <Compile Include="RecordReaders\FormDefinitionRecordReader.cs" />
+    <Compile Include="RecordReaders\DestinationTypeRecordReader.cs" />
+    <Compile Include="RecordReaders\DestinationCollectionRecordReader.cs" />
+    <Compile Include="RecordReaders\DestinationCollectionMemberRecordReader.cs" />
+    <Compile Include="RecordReaders\DestinationClassificationRecordReader.cs" />
+    <Compile Include="RecordReaders\DestinationRecordReader.cs" />
+    <Compile Include="RepositoryContainer.cs" />
+    <Compile Include="SearchStreetRepository.cs" />
+    <Compile Include="ThemeDal.cs" />
+    <Compile Include="WrapperObjects\Channel.cs" />
+    <Compile Include="WrapperObjects\ChannelChannelGroup.cs" />
+    <Compile Include="WrapperObjects\ChannelContent.cs" />
+    <Compile Include="WrapperObjects\ChannelGroup.cs" />
+    <Compile Include="WrapperObjects\ConfigParameter.cs" />
+    <Compile Include="WrapperObjects\ContentItem.cs" />
+    <Compile Include="WrapperObjects\ControlDefinition.cs" />
+    <Compile Include="WrapperObjects\Destination.cs" />
+    <Compile Include="WrapperObjects\DestinationClassification.cs" />
+    <Compile Include="WrapperObjects\DestinationCollection.cs" />
+    <Compile Include="WrapperObjects\DestinationCollectionMember.cs" />
+    <Compile Include="WrapperObjects\DestinationType.cs" />
+    <Compile Include="WrapperObjects\FormDefinition.cs" />
+    <Compile Include="WrapperObjects\GpsRegion.cs" />
+    <Compile Include="WrapperObjects\Itinerary.cs" />
+    <Compile Include="WrapperObjects\ItineraryDay.cs" />
+    <Compile Include="WrapperObjects\ItineraryDestination.cs" />
+    <Compile Include="WrapperObjects\MasterArea.cs" />
+    <Compile Include="WrapperObjects\MySelection.cs" />
+    <Compile Include="WrapperObjects\RecentDestination.cs" />
+    <Compile Include="WrapperObjects\SearchRegion.cs" />
+    <Compile Include="WrapperObjects\SearchRegionStreet.cs" />
+    <Compile Include="WrapperObjects\SearchStreet.cs" />
+    <Compile Include="WrapperObjects\Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datasets.WM5\Datasets.WM5.csproj">
+      <Project>{55ECDDCB-C846-4B6C-B2F4-3D1771768FBA}</Project>
+      <Name>Datasets.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Types.WM5\Types.WM5.csproj">
+      <Project>{33D7ECF7-ABD6-446D-A765-DF62C92FF581}</Project>
+      <Name>Types.WM5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetFileName) $(ProjectName).dal</PostBuildEvent>
+  </PropertyGroup>
+</Project>

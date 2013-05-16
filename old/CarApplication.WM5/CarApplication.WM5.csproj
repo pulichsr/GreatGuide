@@ -1,0 +1,979 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <GenerateResourceNeverLockTypeAssemblies>true</GenerateResourceNeverLockTypeAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <OutputPath>..\Dll\CarApplication.WM5\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C2E5FA4-B2C5-40DB-8F56-26A9428D4B0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo.GoodGuide.CarApplication</RootNamespace>
+    <AssemblyName>CarApplication.WM5</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>ResidentFlash\</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <DeployDirPrefix>\</DeployDirPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>..\Dll\CarApplication.WM5\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="geobase.mobile.net, Version=3.7.1.0, Culture=neutral, PublicKeyToken=f7142dcb22301ad0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\GeoBase\geobase.mobile.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Data.Sqlite, Version=1.0.4393.42698, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Devices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Diagnostics, Version=1.0.4387.18693, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Drawing, Version=1.0.4610.310, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Events, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Gps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Gps.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.IO, Version=1.0.4527.19885, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Plugins, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Reflection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Text, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Threading, Version=1.0.4573.25001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.WinCe, Version=1.0.4387.18693, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.WinCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.XML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedList.CF2, Version=5.0.0.3, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL" />
+    <Reference Include="Resco.SmartGrid.CF2, Version=5.1.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=1fdb50b1b62b4c84, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Sqlite\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BannerAdProvider.cs" />
+    <Compile Include="frmContentManagerConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContentManagerConfiguration.Designer.cs">
+      <DependentUpon>frmContentManagerConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMediaPlayerConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMediaPlayerConfiguration.Designer.cs">
+      <DependentUpon>frmMediaPlayerConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeoBaseConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeoBaseConfiguration.Designer.cs">
+      <DependentUpon>frmGeoBaseConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGpsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGpsInfo.Designer.cs">
+      <DependentUpon>frmGpsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSelectDestination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSelectDestination.designer.cs">
+      <DependentUpon>frmSelectDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\DestinationSelector.cs" />
+    <Compile Include="Search\DestinationSearcher.cs" />
+    <Compile Include="Search\frmSearchDestination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchDestination.designer.cs">
+      <DependentUpon>frmSearchDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageDisplay.cs" />
+    <Compile Include="SelectedCulture.cs" />
+    <Compile Include="Search\GeocodedAddressFactory.cs" />
+    <Compile Include="Search\RegionSelector.cs" />
+    <Compile Include="Search\frmSelectRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSelectRegion.designer.cs">
+      <DependentUpon>frmSelectRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchRegion.designer.cs">
+      <DependentUpon>frmSearchRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\RegionSearcher.cs" />
+    <Compile Include="Search\RegionConfirmer.cs" />
+    <Compile Include="Search\frmConfirmRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmConfirmRegion.designer.cs">
+      <DependentUpon>frmConfirmRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmEnterStreetNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmEnterStreetNumber.designer.cs">
+      <DependentUpon>frmEnterStreetNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmConfirmStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmConfirmStreet.designer.cs">
+      <DependentUpon>frmConfirmStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSelectStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSelectStreet.designer.cs">
+      <DependentUpon>frmSelectStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDirections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDirections.Designer.cs">
+      <DependentUpon>frmDirections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchStreet.designer.cs">
+      <DependentUpon>frmSearchStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GpsLocationSource.cs" />
+    <Compile Include="LastGpsPosition.cs" />
+    <Compile Include="Search\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmation.Designer.cs">
+      <DependentUpon>frmConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse.cs" />
+    <Compile Include="StartupSequenceController.cs" />
+    <Compile Include="Search\StreetConfirmer.cs" />
+    <Compile Include="Search\StreetNumberEntry.cs" />
+    <Compile Include="Search\StreetSearcher.cs" />
+    <Compile Include="Search\StreetSelector.cs" />
+    <Compile Include="WelcomeAdProvider.cs" />
+    <Compile Include="frmSelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectLanguage.Designer.cs">
+      <DependentUpon>frmSelectLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVolume.Designer.cs">
+      <DependentUpon>frmVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStreetAddressList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStreetAddressList.Designer.cs">
+      <DependentUpon>frmStreetAddressList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestData.cs" />
+    <Compile Include="frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripRecorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTripRecorder.Designer.cs">
+      <DependentUpon>frmTripRecorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnterFmFrequency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnterFmFrequency.Designer.cs">
+      <DependentUpon>frmEnterFmFrequency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterArea.Designer.cs">
+      <DependentUpon>frmMasterArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectMasterArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectMasterArea.Designer.cs">
+      <DependentUpon>frmSelectMasterArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactorySetupPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactorySetupPassword.Designer.cs">
+      <DependentUpon>frmFactorySetupPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSetup.Designer.cs">
+      <DependentUpon>frmUserSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnterLatLong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnterLatLong.Designer.cs">
+      <DependentUpon>frmEnterLatLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecentDestinationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecentDestinationList.Designer.cs">
+      <DependentUpon>frmRecentDestinationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectItinerary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectItinerary.Designer.cs">
+      <DependentUpon>frmSelectItinerary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactoryError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactoryError.Designer.cs">
+      <DependentUpon>frmFactoryError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadDestinations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadDestinations.Designer.cs">
+      <DependentUpon>frmLoadDestinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectAudioSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectAudioSource.Designer.cs">
+      <DependentUpon>frmSelectAudioSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectAudioContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectAudioContent.Designer.cs">
+      <DependentUpon>frmSelectAudioContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersions.Designer.cs">
+      <DependentUpon>frmVersions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataExchange.Designer.cs">
+      <DependentUpon>frmDataExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlphaNumericKeyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlphaNumericKeyboard.Designer.cs">
+      <DependentUpon>frmAlphaNumericKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadItinerary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadItinerary.Designer.cs">
+      <DependentUpon>frmLoadItinerary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmergency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmergency.Designer.cs">
+      <DependentUpon>frmEmergency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAudioSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudioSettings.Designer.cs">
+      <DependentUpon>frmAudioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemSettings.Designer.cs">
+      <DependentUpon>frmSystemSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPoiBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPoiBase.Designer.cs">
+      <DependentUpon>frmSelectPoiBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPoiSubcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPoiSubcategory.Designer.cs">
+      <DependentUpon>frmSelectPoiSubcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPoiDestination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPoiDestination.Designer.cs">
+      <DependentUpon>frmSelectPoiDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinationMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinationMore.Designer.cs">
+      <DependentUpon>frmDestinationMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlphaSearchBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlphaSearchBase.Designer.cs">
+      <DependentUpon>frmAlphaSearchBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinationListSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinationListSearch.Designer.cs">
+      <DependentUpon>frmDestinationListSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMySelection.Designer.cs">
+      <DependentUpon>frmMySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPoiCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPoiCategory.Designer.cs">
+      <DependentUpon>frmSelectPoiCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTenButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTenButton.Designer.cs">
+      <DependentUpon>frmTenButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommentMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommentMore.Designer.cs">
+      <DependentUpon>frmCommentMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItinerary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItinerary.Designer.cs">
+      <DependentUpon>frmItinerary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinationList.Designer.cs">
+      <DependentUpon>frmDestinationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocked.Designer.cs">
+      <DependentUpon>frmLocked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadContent.Designer.cs">
+      <DependentUpon>frmLoadContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadFormDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadFormDefinition.Designer.cs">
+      <DependentUpon>frmLoadFormDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLanguageUnitsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanguageUnitsSettings.Designer.cs">
+      <DependentUpon>frmLanguageUnitsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarApplication.cs" />
+    <Compile Include="frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarApplication.Designer.cs">
+      <DependentUpon>frmCarApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarApplicationBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarApplicationBase.Designer.cs">
+      <DependentUpon>frmCarApplicationBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinationListBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinationListBase.Designer.cs">
+      <DependentUpon>frmDestinationListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisclaimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisclaimer.Designer.cs">
+      <DependentUpon>frmDisclaimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEightButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEightButton.Designer.cs">
+      <DependentUpon>frmEightButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHowItWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHowItWorks.Designer.cs">
+      <DependentUpon>frmHowItWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactorySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactorySetup.Designer.cs">
+      <DependentUpon>frmFactorySetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmContentManagerConfiguration.resx">
+      <DependentUpon>frmContentManagerConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMediaPlayerConfiguration.resx">
+      <DependentUpon>frmMediaPlayerConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeoBaseConfiguration.resx">
+      <DependentUpon>frmGeoBaseConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGpsInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGpsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSelectDestination.resx">
+      <DependentUpon>frmSelectDestination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSearchDestination.resx">
+      <DependentUpon>frmSearchDestination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSelectRegion.resx">
+      <DependentUpon>frmSelectRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSearchRegion.resx">
+      <DependentUpon>frmSearchRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmConfirmRegion.resx">
+      <DependentUpon>frmConfirmRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmEnterStreetNumber.resx">
+      <DependentUpon>frmEnterStreetNumber.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmConfirmStreet.resx">
+      <DependentUpon>frmConfirmStreet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSelectStreet.resx">
+      <DependentUpon>frmSelectStreet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDirections.resx">
+      <DependentUpon>frmDirections.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmation.resx">
+      <DependentUpon>frmConfirmation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmSearchStreet.resx">
+      <DependentUpon>frmSearchStreet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectLanguage.resx">
+      <DependentUpon>frmSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVolume.resx">
+      <DependentUpon>frmVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStreetAddressList.resx">
+      <DependentUpon>frmStreetAddressList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripRecorder.resx">
+      <DependentUpon>frmTripRecorder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnterFmFrequency.resx">
+      <DependentUpon>frmEnterFmFrequency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterArea.resx">
+      <DependentUpon>frmMasterArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectMasterArea.resx">
+      <DependentUpon>frmSelectMasterArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactorySetupPassword.resx">
+      <DependentUpon>frmFactorySetupPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSetup.resx">
+      <DependentUpon>frmUserSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnterLatLong.resx">
+      <DependentUpon>frmEnterLatLong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecentDestinationList.resx">
+      <DependentUpon>frmRecentDestinationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectItinerary.resx">
+      <DependentUpon>frmSelectItinerary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactoryError.resx">
+      <DependentUpon>frmFactoryError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadDestinations.resx">
+      <DependentUpon>frmLoadDestinations.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectAudioSource.resx">
+      <DependentUpon>frmSelectAudioSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectAudioContent.resx">
+      <DependentUpon>frmSelectAudioContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersions.resx">
+      <DependentUpon>frmVersions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataExchange.resx">
+      <DependentUpon>frmDataExchange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlphaNumericKeyboard.resx">
+      <DependentUpon>frmAlphaNumericKeyboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadItinerary.resx">
+      <DependentUpon>frmLoadItinerary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmergency.resx">
+      <DependentUpon>frmEmergency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudioSettings.resx">
+      <DependentUpon>frmAudioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSystemSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPoiBase.resx">
+      <DependentUpon>frmSelectPoiBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPoiSubcategory.resx">
+      <DependentUpon>frmSelectPoiSubcategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPoiDestination.resx">
+      <DependentUpon>frmSelectPoiDestination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinationMore.resx">
+      <DependentUpon>frmDestinationMore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlphaSearchBase.resx">
+      <DependentUpon>frmAlphaSearchBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinationListSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDestinationListSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMySelection.resx">
+      <DependentUpon>frmMySelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPoiCategory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectPoiCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTenButton.resx">
+      <DependentUpon>frmTenButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommentMore.resx">
+      <DependentUpon>frmCommentMore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItinerary.resx">
+      <DependentUpon>frmItinerary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinationList.resx">
+      <DependentUpon>frmDestinationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocked.resx">
+      <DependentUpon>frmLocked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadContent.resx">
+      <DependentUpon>frmLoadContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadFormDefinition.resx">
+      <DependentUpon>frmLoadFormDefinition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLanguageUnitsSettings.resx">
+      <DependentUpon>frmLanguageUnitsSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarApplication.resx">
+      <DependentUpon>frmCarApplication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarApplicationBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCarApplicationBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinationListBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDestinationListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisclaimer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDisclaimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEightButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEightButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHowItWorks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHowItWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactorySetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFactorySetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TemplateManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\DotNetRepository\CF2 WM5\Sqlite\SQLite.Interop.DLL">
+      <Link>SQLite.Interop.DLL</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\frmMenu\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll.WM5\Bll.WM5.csproj">
+      <Project>{D0985321-F040-4359-9DE9-1476F3900300}</Project>
+      <Name>Bll.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarApplicationResources.WM5\CarApplicationResources.WM5.csproj">
+      <Project>{4A66AA99-57D6-455D-ACC3-8A6D8FA24632}</Project>
+      <Name>CarApplicationResources.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls.WM5\Controls.WM5.csproj">
+      <Project>{E31B6FF9-71AF-4CEF-B404-5D4BB125A7AF}</Project>
+      <Name>Controls.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dal.Sqlite.WM5\Dal.Sqlite.WM5.csproj">
+      <Project>{4E66D808-5F02-4544-BA39-D0C4A9B345A3}</Project>
+      <Name>Dal.Sqlite.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datasets.WM5\Datasets.WM5.csproj">
+      <Project>{55ECDDCB-C846-4B6C-B2F4-3D1771768FBA}</Project>
+      <Name>Datasets.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperatingSystemPlatformServices.WM5\OperatingSystemServices.WM5.csproj">
+      <Project>{8C1AED73-7744-478C-BD97-5F010724A4FA}</Project>
+      <Name>OperatingSystemServices.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Search.WM5\Search.WM5.csproj">
+      <Project>{8A3D8F01-6F22-4D79-A6CB-5ADE0C8C03EF}</Project>
+      <Name>Search.WM5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Types.WM5\Types.WM5.csproj">
+      <Project>{0E28F032-FCD1-4D55-8ABC-935CA3C01324}</Project>
+      <Name>Types.WM5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\DotNetRepository\CF2 WM5\GeoBase\geobase.drawing.dll">
+      <Link>geobase.drawing.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\DotNetRepository\CF2 WM5\GeoBase\geobase.mobile.dll">
+      <Link>geobase.mobile.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Database.Sqlite\GoodGuide.sqlite">
+      <Link>GoodGuide.sqlite</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\ContentManager.WM5.ggp">
+      <Link>Plugins\ContentManager.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\DestinationManager.WM5.ggp">
+      <Link>Plugins\DestinationManager.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\GpsRawDataRecorder.WM5.ggp">
+      <Link>Plugins\GpsRawDataRecorder.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\GpsRawDataTranslator.WM5.ggp">
+      <Link>Plugins\GpsRawDataTranslator.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\MasterAreaTrigger.WM5.ggp">
+      <Link>Plugins\MasterAreaTrigger.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\RegionTrigger.WM5.ggp">
+      <Link>Plugins\RegionTrigger.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\SerialGps.WM5.ggp">
+      <Link>Plugins\SerialGps.WM5.ggp</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\Dal.Sqlite.WM5.dal">
+      <Link>Dal.Sqlite.WM5.dal</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\MockMediaPlayer.WM5.ggmm">
+      <Link>Plugins\MockMediaPlayer.WM5.ggmm</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\TopBand\TestDll.dll">
+      <Link>TestDll.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dll.WM5\SirfGps.WM5.ggp">
+      <Link>Plugins\SirfGps.WM5.ggp</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\TopBandDeviceServices.ggds">
+      <Link>TopBandDeviceServices.ggds</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\TopBandMediaPlayer.WM5.ggmm">
+      <Link>Plugins\TopBandMediaPlayer.WM5.ggmm</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\GeoBaseNavigator.WM5.ggn">
+      <Link>Plugins\GeoBaseNavigator.WM5.ggn</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\FileLogger.WM5.ggl">
+      <Link>FileLogger.WM5.ggl</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Dll.WM5\MemoryLogger.WM5.ggl">
+      <Link>MemoryLogger.WM5.ggl</Link>
+    </Content>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

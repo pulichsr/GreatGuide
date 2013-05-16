@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GpsRegionDataset" targetNamespace="http://tempuri.org/GpsRegionDataset.xsd" xmlns:mstns="http://tempuri.org/GpsRegionDataset.xsd" xmlns="http://tempuri.org/GpsRegionDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GpsRegionDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="GpsRegionDataset" msprop:Generator_DataSetName="GpsRegionDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GpsRegion" msprop:Generator_UserTableName="GpsRegion" msprop:Generator_RowDeletedName="GpsRegionRowDeleted" msprop:Generator_RowChangedName="GpsRegionRowChanged" msprop:Generator_RowClassName="GpsRegionRow" msprop:Generator_RowChangingName="GpsRegionRowChanging" msprop:Generator_RowEvArgName="GpsRegionRowChangeEvent" msprop:Generator_RowEvHandlerName="GpsRegionRowChangeEventHandler" msprop:Generator_TableClassName="GpsRegionDataTable" msprop:Generator_TableVarName="tableGpsRegion" msprop:Generator_RowDeletingName="GpsRegionRowDeleting" msprop:Generator_TablePropName="GpsRegion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RegionType" msprop:Generator_UserColumnName="RegionType" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnRegionType" msprop:Generator_ColumnPropNameInTable="RegionTypeColumn" msprop:Generator_ColumnPropNameInRow="RegionType" type="xs:string" minOccurs="0" />
+              <xs:element name="RegionData" msprop:Generator_UserColumnName="RegionData" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnRegionData" msprop:Generator_ColumnPropNameInTable="RegionDataColumn" msprop:Generator_ColumnPropNameInRow="RegionData" type="xs:string" minOccurs="0" />
+              <xs:element name="MinLatitude" msprop:Generator_UserColumnName="MinLatitude" msprop:Generator_ColumnPropNameInRow="MinLatitude" msprop:Generator_ColumnVarNameInTable="columnMinLatitude" msprop:Generator_ColumnPropNameInTable="MinLatitudeColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="MaxLatitude" msprop:Generator_UserColumnName="MaxLatitude" msprop:Generator_ColumnPropNameInRow="MaxLatitude" msprop:Generator_ColumnVarNameInTable="columnMaxLatitude" msprop:Generator_ColumnPropNameInTable="MaxLatitudeColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="MinLongitude" msprop:Generator_UserColumnName="MinLongitude" msprop:Generator_ColumnPropNameInRow="MinLongitude" msprop:Generator_ColumnVarNameInTable="columnMinLongitude" msprop:Generator_ColumnPropNameInTable="MinLongitudeColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="MaxLongitude" msprop:Generator_UserColumnName="MaxLongitude" msprop:Generator_ColumnPropNameInRow="MaxLongitude" msprop:Generator_ColumnVarNameInTable="columnMaxLongitude" msprop:Generator_ColumnPropNameInTable="MaxLongitudeColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="ResetOnEntry" msprop:Generator_UserColumnName="ResetOnEntry" msprop:Generator_ColumnPropNameInRow="ResetOnEntry" msprop:Generator_ColumnVarNameInTable="columnResetOnEntry" msprop:Generator_ColumnPropNameInTable="ResetOnEntryColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MasterAreaId" msprop:Generator_UserColumnName="MasterAreaId" msprop:Generator_ColumnPropNameInRow="MasterAreaId" msprop:Generator_ColumnVarNameInTable="columnMasterAreaId" msprop:Generator_ColumnPropNameInTable="MasterAreaIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ThemeId" msprop:Generator_UserColumnName="ThemeId" msprop:Generator_ColumnPropNameInRow="ThemeId" msprop:Generator_ColumnVarNameInTable="columnThemeId" msprop:Generator_ColumnPropNameInTable="ThemeIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

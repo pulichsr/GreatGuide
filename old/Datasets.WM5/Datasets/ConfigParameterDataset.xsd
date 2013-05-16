@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConfigParameterDataset" targetNamespace="http://tempuri.org/ConfigParameterDataset.xsd" xmlns:mstns="http://tempuri.org/ConfigParameterDataset.xsd" xmlns="http://tempuri.org/ConfigParameterDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConfigParameterDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ConfigParameterDataset" msprop:Generator_DataSetName="ConfigParameterDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConfigParameter" msprop:Generator_UserTableName="ConfigParameter" msprop:Generator_RowDeletedName="ConfigParameterRowDeleted" msprop:Generator_TableClassName="ConfigParameterDataTable" msprop:Generator_RowChangedName="ConfigParameterRowChanged" msprop:Generator_RowClassName="ConfigParameterRow" msprop:Generator_RowChangingName="ConfigParameterRowChanging" msprop:Generator_RowEvArgName="ConfigParameterRowChangeEvent" msprop:Generator_RowEvHandlerName="ConfigParameterRowChangeEventHandler" msprop:Generator_TablePropName="ConfigParameter" msprop:Generator_TableVarName="tableConfigParameter" msprop:Generator_RowDeletingName="ConfigParameterRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ParamName" msprop:Generator_UserColumnName="ParamName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnParamName" msprop:Generator_ColumnPropNameInTable="ParamNameColumn" msprop:Generator_ColumnPropNameInRow="ParamName" type="xs:string" minOccurs="0" />
+              <xs:element name="ParamValue" msprop:Generator_UserColumnName="ParamValue" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnParamValue" msprop:Generator_ColumnPropNameInTable="ParamValueColumn" msprop:Generator_ColumnPropNameInRow="ParamValue" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

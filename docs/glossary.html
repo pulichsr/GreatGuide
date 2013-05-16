@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Glossary of Terms and GUI Elements &mdash; Media Position Editor v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="/home/peter/software/jsmath"></script>
+    <link rel="top" title="Media Position Editor v1.0 documentation" href="index.html" />
+    <link rel="prev" title="How to Measure Distance" href="howto/measuredistance.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="howto/measuredistance.html" title="How to Measure Distance"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Media Position Editor v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="glossary-of-terms-and-gui-elements">
+<h1>Glossary of Terms and <a class="reference internal" href="#term-gui"><em class="xref">GUI</em></a> Elements<a class="headerlink" href="#glossary-of-terms-and-gui-elements" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary docutils">
+<dt id="term-acceleration-property">acceleration property</dt>
+<dd>This is a speed threshold related property. When you want it to trigger on crossing the threshold whilst accelerating, set this to true. False means that it will trigger whenever you are above the speed threshold. This is a <a class="reference internal" href="#term-boolean"><em class="xref">boolean</em></a> value.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">ACC:1</span></tt> - This will enable this property</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-area">area</dt>
+<dd>This is a shape which represents 1 or more media files. They can be seen in the <a class="reference internal" href="#term-map-view"><em class="xref">map view</em></a>.</dd>
+<dt id="term-area-list">area list</dt>
+<dd><em>Found at the bottom of the right column in the</em> <a class="reference internal" href="#term-gui"><em class="xref">GUI</em></a>.
+This is a list of areas and the domains in which they can be found.
+Use this to go to a specific area (double-click on the name) as well as select an area to edit.</dd>
+<dt id="term-area-property-view">area property view</dt>
+<dd><em>Found at the bottom of the left column in the</em> <a class="reference internal" href="#term-gui"><em class="xref">GUI</em></a>
+This displays all of an areas properties in a list. You should find a definition for each of the properties in the glossary.
+This is also used to change properties quickly using a specially formatted string, similar to that used in the MapSource comment field.
+It is also known as the <a class="reference internal" href="#term-coded-property-string"><em class="xref">coded property string</em></a>.
+However, this only allows editing of, mostly, area related properties. This means fewer options are changeable/necessary here.</dd>
+<dt id="term-boolean">boolean</dt>
+<dd>This is a true or false value. In properties it is usually specified as 1 (which is true) and 0 (which is false).</dd>
+<dt id="term-can-re-trigger-threshold-property">can re-trigger threshold property</dt>
+<dd>This allows speed threshold triggers to re-trigger without having to leave the area itself. This is a <a class="reference internal" href="#term-boolean"><em class="xref">boolean</em></a> value.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">STCR:1</span></tt> - this will enable re-triggering.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please note that for this to work correctly, the <a class="reference internal" href="#term-maximum-trigger-count-property"><em class="xref">maximum trigger count property</em></a> has to be set to a sufficiently high level.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-coded-property-string">coded property string</dt>
+<dd>This allows the changing of an areas properties using just one continuous line of text. Each property is separated by a single plus &#8216;+&#8217; character.
+An example would be <tt class="docutils literal"><span class="pre">AR:50+D:260</span></tt>, which is, of course, two different properties. Each property is divided into two segments by the colon &#8216;:&#8217; character.
+The first segment is the property name. The second segment is the value to set the property to. Unless otherwise specified, the properties only apply to the first media/direction.
+The following properties are supported:</dd>
+</dl>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="#term-user-play-prompt-property"><em class="xref">user play prompt property</em></a></li>
+<li><a class="reference internal" href="#term-radius-property"><em class="xref">radius property</em></a></li>
+<li><a class="reference internal" href="#term-sequence-area-property"><em class="xref">sequence area property</em></a></li>
+<li><a class="reference internal" href="#term-content-base-path-property"><em class="xref">content base path property</em></a></li>
+<li><a class="reference internal" href="#term-directions-property"><em class="xref">directions property</em></a></li>
+<li><a class="reference internal" href="#term-delay-time-property"><em class="xref">delay time property</em></a></li>
+<li><a class="reference internal" href="#term-priority-property"><em class="xref">priority property</em></a></li>
+<li><a class="reference internal" href="#term-reset-played-areas-property"><em class="xref">reset played areas property</em></a></li>
+<li><a class="reference internal" href="#term-maximum-trigger-count-property"><em class="xref">maximum trigger count property</em></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="#term-speed-above-threshold-property"><em class="xref">speed above threshold property</em></a></li>
+<li><a class="reference internal" href="#term-speed-below-threshold-property"><em class="xref">speed below threshold property</em></a></li>
+<li><a class="reference internal" href="#term-can-re-trigger-threshold-property"><em class="xref">can re-trigger threshold property</em></a></li>
+<li><a class="reference internal" href="#term-trigger-type-property"><em class="xref">trigger type property</em></a></li>
+<li><a class="reference internal" href="#term-days-of-week-property"><em class="xref">days of week property</em></a></li>
+<li><a class="reference internal" href="#term-acceleration-property"><em class="xref">acceleration property</em></a></li>
+<li><a class="reference internal" href="#term-deceleration-property"><em class="xref">deceleration property</em></a></li>
+<li><a class="reference internal" href="#term-time-window-property"><em class="xref">time window property</em></a></li>
+<li><a class="reference internal" href="#term-date-window-property"><em class="xref">date window property</em></a></li>
+</ul>
+</td></tr></table>
+<dl class="glossary docutils">
+<dt id="term-content-base-path-property">content base path property</dt>
+<dd>This is the first part of the path used to store media files. An example would be FirstPart\Second\Third. &#8216;FirstPart&#8217; is what this property is.
+This is usually the name of the <a class="reference internal" href="#term-domain"><em class="xref">domain</em></a></dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">CBP:RootDirectory</span></tt></p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-date-window-property">date window property</dt>
+<dd>This specifies the start and ending dates in-between which the media may play. The two dates are separated using a dash &#8216;-&#8216;.
+The year, month and day are separated using a forward slash &#8216;/&#8217;.
+There are two different types of date ranges that can be entered.</dd>
+</dl>
+<ol class="arabic simple">
+<li>One with a year, specifies a specific year in which to trigger.</li>
+<li>One without a year, specifies a seasonal date range. This means that every year, between the specified month/day window, the media will be played.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">Z:1999/12/24-2000/12/23</span></tt> - this specifies a specific year during which the media may play.
+<tt class="docutils literal"><span class="pre">Z:1/1-3/1</span></tt> - this means that, every year, only the first two months will be valid trigger periods.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-days-of-week-property">days of week property</dt>
+<dd>This allows you to specify on which days the media may play. Just use the first three characters of the day you want. Each day is comma separated.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">W:MON,TUE,WED</span></tt> - this will only trigger the media on Monday, Tuesday and Wednesday</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-deceleration-property">deceleration property</dt>
+<dd>This is a speed threshold related property. When you want it to trigger on crossing the threshold whilst decelerating, set this to true. False means that it will trigger whenever you are below the speed threshold. This is a <a class="reference internal" href="#term-boolean"><em class="xref">boolean</em></a> value.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">DEC:1</span></tt> - This will enable this property</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-delay-time-property">delay time property</dt>
+<dd>This property is the time in seconds with which to delay the start of playing this media file upon entering the area.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">DT:180</span></tt>. This will delay the playing of the media by 3 minutes.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-directions-property">directions property</dt>
+<dd>This is used to set the heading, file name and variance. Any one of the successive options can be left out.
+More than one direction is specified by separating them with a pipe &#8216;|&#8217;.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">D:150,MyFile.mp3.45|D:260,AnotherFile.mp3</span></tt> - this means the first media file &#8216;MyFile.mp3&#8217; will only play when heading is 150 degrees with a variance of 45 degrees. The second media file &#8216;AnotherFile.mp3&#8217; will play in the heading of 260. The default variance is 45.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-domain">domain</dt>
+<dd>This is a large shape that acts as a container for several <a class="reference internal" href="#term-area"><em class="xref">area</em></a>&#8216;s.
+Its name is used to point to the first directory of where all media files relating to it can be found</dd>
+<dt id="term-gps">GPS</dt>
+<dd>This is a.k.a. <em>global positioning system</em>. It is used to pinpoint locations using satellite.</dd>
+<dt id="term-gui">GUI</dt>
+<dd>This is a.k.a. <em>general user interface</em>. It is what the user interacts with when they use the application.</dd>
+<dt id="term-map-view">map view</dt>
+<dd><em>Found in the centre of the</em> <a class="reference internal" href="#term-gui"><em class="xref">GUI</em></a>. This is the main purpose of the application, the visualisation of <a class="reference internal" href="#term-gps"><em class="xref">GPS</em></a> positioned media files.</dd>
+<dt id="term-maximum-trigger-count-property">maximum trigger count property</dt>
+<dd>This property specifies the maximum number of times the media can be triggered or played. It could also be called the maximum play count property.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default is 1.
+Example: <tt class="docutils literal"><span class="pre">S:999</span></tt> - this is usually a good enough number if you don&#8217;t want restrictions.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-media-file">media file</dt>
+<dd>This can only be audio (*.mp3) at present, but other types will be possible in the future.</dd>
+</dl>
+<ul class="simple">
+<li>Audio</li>
+<li>Video</li>
+<li>Image</li>
+<li>Text</li>
+<li>Menu</li>
+</ul>
+<dl class="glossary docutils">
+<dt id="term-priority-property">priority property</dt>
+<dd>This property assigns one of three priority levels to the media. The most important is &#8216;1&#8217;, the least is &#8216;3&#8217;.
+Example: <tt class="docutils literal"><span class="pre">PR:2</span></tt> - which is also the default priority level.</dd>
+<dt id="term-query">query</dt>
+<dd>A query is a stored filter. It will find specific information, based on the criteria given by you.</dd>
+<dt id="term-query-editor">query editor</dt>
+<dd><em>Found at the top of the right column.</em>
+This editor allows editing of queries which can then be used to filter the list of areas displayed in the area list.</dd>
+<dt id="term-query-list">query list</dt>
+<dd><em>Found below the</em> <a class="reference internal" href="#term-query-editor"><em class="xref">query editor</em></a> <em>in the right column.</em>
+This is a list of queries that have been created by you. Select any one of these queries to filter the <a class="reference internal" href="#term-area-list"><em class="xref">area list</em></a>.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default query is created automatically for you and will allow you to see all areas available to you, across all domains.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-user-play-prompt-property">user play prompt property</dt>
+<dd>This determines whether the user will be prompted before playing back the media. This is a <a class="reference internal" href="#term-boolean"><em class="xref">boolean</em></a> value.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">A:1</span></tt> - which means the user will be prompted before playing the media.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-radius-property">radius property</dt>
+<dd>This is the radius, in meters, of a circular area.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">AR:2500</span></tt> - this specifies a circular area with a radius of 2.5km or 2500m</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-reset-played-areas-property">reset played areas property</dt>
+<dd>This says that when you enter this area, all areas that have been marked as played will have their play count reset. This is a <a class="reference internal" href="#term-boolean"><em class="xref">boolean</em></a> value.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">R:1</span></tt> - which means, yes, reset played areas.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-sequence-area-property">sequence area property</dt>
+<dd>This refers to the parent area. This will allow chaining of media. If the parent has not been played, this area will not play either.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">C:MyParent</span></tt> - where MyParent is the name of the area to which this child area is refering.</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-speed-above-threshold-property">speed above threshold property</dt>
+<dd>This property specifies the speed above which the speed threshold will trigger. The unit of measurement is km/h.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">SAT:250</span></tt> - this refers to speeds above 250km/h</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-speed-below-threshold-property">speed below threshold property</dt>
+<dd>This property specifies the speed below which the speed threshold will trigger. The unit of measurement is km/h.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">SBT:900</span></tt> - this refers to all speeds below 900km/h</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-text-box">text box</dt>
+<dd>This is a rectangular box used for text entry in the <a class="reference internal" href="#term-gui"><em class="xref">GUI</em></a></dd>
+<dt id="term-time-window-property">time window property</dt>
+<dd>This sets the start and end time during which the media may play. The two times are separated using a dash &#8216;-&#8216;.
+The hours and minutes are separated using a period &#8216;.&#8217;.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">X:15.30-22.59</span></tt> - The start time is 3:30pm and the end time is 10.59pm</p>
+</div>
+<dl class="glossary docutils">
+<dt id="term-trigger-type-property">trigger type property</dt>
+<dd>This specifies the type of trigger. There are 4 types, each specified using an alphanumeric character.</dd>
+</dl>
+<ul class="simple">
+<li>A - Always play the media when entering the area.</li>
+<li>E - Only trigger on entering the area.</li>
+<li>X - Trigger only on exiting the area.</li>
+<li>W - Only trigger the playing of the media, while you are in the area.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><tt class="docutils literal"><span class="pre">T:A</span></tt> - this is also the default</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="howto/measuredistance.html"
+                                  title="previous chapter">How to Measure Distance</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/glossary.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="howto/measuredistance.html" title="How to Measure Distance"
+             >previous</a> |</li>
+        <li><a href="index.html">Media Position Editor v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009, Peter Badenhorst.
+      Last updated on Oct 08, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.3.
+    </div>
+  </body>
+</html>

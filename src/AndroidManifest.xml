@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.greatguide"
+          android:versionCode="1"
+          android:versionName="0.1.M2.R_2013_01_23">
+
+    <supports-screens
+            android:anyDensity="true"
+            android:resizeable="false"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            />
+
+    <uses-sdk android:minSdkVersion="13" android:targetSdkVersion ="16"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name"
+                 android:theme="@style/GreatGuideTheme"
+                 android:allowBackup="false"
+                 android:name=".GreatGuideApplication">
+
+        <service
+                android:name="com.greatguide.backend.core.GGService"
+                android:process=":GGService_process"
+                android:label="Great Guide Service Core"
+                >
+        </service>
+
+        <uses-library android:name="com.google.android.maps" android:required="false" />
+        <uses-library android:name="android.test.runner" android:required="false" />
+<!--  
+        <activity android:name=".ui.temp.TourUI" class=".TourUI" android:label="@string/app_name">
+            <intent-filter>
+                <action  android:name="android.intent.action.MAIN" android:value="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" android:value="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+-->
+        		  
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/title_activity_main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ToursActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ui.DirectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ui.WelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ui.SetupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+    </application>
+	
+</manifest>

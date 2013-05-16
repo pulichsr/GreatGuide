@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_80"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/dlg_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/undefined"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/dlg_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/undefined"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dlg_activation_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_large"
+        android:gravity="left|top"
+        android:text="@string/undefined"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal" />
+
+    <ImageView
+        android:id="@+id/dlg_activiation_go_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/padding_medium"
+        android:contentDescription="@null"
+        android:src="@drawable/button_icon_go"
+        android:clickable="true" />
+
+</LinearLayout>

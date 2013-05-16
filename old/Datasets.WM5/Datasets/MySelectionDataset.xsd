@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MySelectionDataset" targetNamespace="http://tempuri.org/MySelectionDataset.xsd" xmlns:mstns="http://tempuri.org/MySelectionDataset.xsd" xmlns="http://tempuri.org/MySelectionDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MySelectionDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MySelectionDataset" msprop:Generator_DataSetName="MySelectionDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MySelection" msprop:Generator_UserTableName="MySelection" msprop:Generator_RowDeletedName="MySelectionRowDeleted" msprop:Generator_TableClassName="MySelectionDataTable" msprop:Generator_RowChangedName="MySelectionRowChanged" msprop:Generator_RowClassName="MySelectionRow" msprop:Generator_RowChangingName="MySelectionRowChanging" msprop:Generator_RowEvArgName="MySelectionRowChangeEvent" msprop:Generator_RowEvHandlerName="MySelectionRowChangeEventHandler" msprop:Generator_TablePropName="MySelection" msprop:Generator_TableVarName="tableMySelection" msprop:Generator_RowDeletingName="MySelectionRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DestinationId" msprop:Generator_UserColumnName="DestinationId" msprop:Generator_ColumnPropNameInRow="DestinationId" msprop:Generator_ColumnVarNameInTable="columnDestinationId" msprop:Generator_ColumnPropNameInTable="DestinationIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

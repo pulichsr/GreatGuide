@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StatusBar">
+    <ImageView 
+        android:id="@+id/header_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stat_sys_volumn_100"
+        android:contentDescription="@string/header_volumn"
+        android:layout_gravity="center|left"
+        android:paddingLeft="@dimen/padding_medium"
+        android:onClick="onVolumeClicked"
+        android:layout_centerVertical="true"
+        android:tag="volume"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/header_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/padding_medium"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/header_gps_status"
+        android:contentDescription="@string/header_battery"
+        android:src="@drawable/stat_sys_battery_100" />
+
+    <TextView
+        android:id="@+id/header_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/header_time"
+        style="@style/StyleBar.Text"/>
+    
+    <ImageView
+        android:id="@+id/header_gps_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_toLeftOf="@+id/header_battery"
+        android:layout_centerVertical="false"
+        android:paddingBottom="@dimen/padding_small"
+        android:contentDescription="@string/header_gps_status"
+        android:paddingRight="@dimen/padding_medium"
+        android:src="@drawable/stat_sys_gps_acquiring" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DSAdvancedList xmlns="http://www.resco-net.com/schemas/DSAdvancedList.xsd">
+  <AdvancedList BorderStyle="None" GridLines="false" MultiSelect="false" ShowFooter="false" ScrollbarWidth="1" DelayLoad="false">
+    <BackColor>White</BackColor>
+    <GridColor>DarkGray</GridColor>
+    <HeaderRow />
+    <HeaderTemplate>0</HeaderTemplate>
+    <FooterRow />
+    <FooterTemplate>0</FooterTemplate>
+    <DbConnector>
+      <CommandText />
+      <ConnectionString />
+    </DbConnector>
+    <RowTemplate Name="Row" Height="48">
+      <BackColor>ffffffff</BackColor>
+      <ForeColor>ffffffff</ForeColor>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentTypeBackground" Bounds="4,0,59,45">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentLeftBackground" Bounds="66,0,255,45">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentRightBackground" Bounds="321,0,35,45">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="MoreBackground" Bounds="360,0,114,45">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.ImageCell" Name="imgType" Bounds="6,2,55,41">
+        <Property Name="CellSource" Value="TypeImageIndex" />
+        <Property Name="AutoHeight" Value="false" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblComment" Bounds="72,0,170,24">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="Name" />
+        <Property Name="TextFont" Value="Tahoma, 12pt, style=Bold" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblMore" Bounds="420,10,52,20">
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="&quot;MORE&quot;" />
+        <Property Name="TextFont" Value="Tahoma, 11pt, style=Bold" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.ImageCell" Name="imgDirection" Bounds="363,2,20,20">
+        <Property Name="CellSource" Value="DirectionImageIndex" />
+        <Property Name="AutoHeight" Value="false" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblDirection" Bounds="385,2,33,20">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="DirectionText" />
+        <Property Name="TextFont" Value="Tahoma, 10pt" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblDistance" Bounds="363,25,55,20">
+        <Property Name="BackColor" Value="ff5e8823" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="DistanceText" />
+        <Property Name="TextFont" Value="Tahoma, 10pt" />
+      </Cell>
+    </RowTemplate>
+    <RowTemplate Name="SelectedRow" Height="48">
+      <BackColor>ffffffff</BackColor>
+      <ForeColor>ffffffff</ForeColor>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentTypeBackground" Bounds="4,0,59,45">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentLeftBackground" Bounds="66,0,255,45">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="CommentRightBackground" Bounds="321,0,35,45">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.Cell" Name="MoreBackground" Bounds="360,0,114,45">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="CellSource" Value="-1" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.ImageCell" Name="imgType" Bounds="6,2,55,41">
+        <Property Name="CellSource" Value="TypeImageIndex" />
+        <Property Name="AutoHeight" Value="false" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblComment" Bounds="72,0,170,24">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="Name" />
+        <Property Name="TextFont" Value="Tahoma, 12pt, style=Bold" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblMore" Bounds="420,10,52,20">
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="&quot;MORE&quot;" />
+        <Property Name="TextFont" Value="Tahoma, 11pt, style=Bold" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.ImageCell" Name="imgDirection" Bounds="363,2,20,20">
+        <Property Name="CellSource" Value="DirectionImageIndex" />
+        <Property Name="AutoHeight" Value="false" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblDirection" Bounds="385,2,33,20">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="DirectionText" />
+        <Property Name="TextFont" Value="Tahoma, 10pt" />
+      </Cell>
+      <Cell Type="Resco.Controls.AdvancedList.TextCell" Name="lblDistance" Bounds="363,25,55,20">
+        <Property Name="BackColor" Value="ff865e71" />
+        <Property Name="ForeColor" Value="White" />
+        <Property Name="CellSource" Value="DistanceText" />
+        <Property Name="TextFont" Value="Tahoma, 10pt" />
+      </Cell>
+    </RowTemplate>
+  </AdvancedList>
+</DSAdvancedList>
+

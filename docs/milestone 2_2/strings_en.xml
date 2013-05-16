@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<!-- This this is the english language file containing all the english string compounents. -->
+
+<resources>
+ 
+    <!--Welcome Screen Screen:1-->
+    <string name="title_welcome" wireframeID="1b">(Title)Welcome Screen</string>
+    <string name="title_version" wireframeID="1c">(Version Info)Version: 1.10745b</string>
+
+    <!-- Home Screen Screen:2-->
+    <string name="title_home" wireframeID="2b">(ScrTitle)&#x0246;Home</string>
+    <string name="label_activation_period" wireframeID="2d">(Activation Period Label)Activation Period</string>
+    <string name="button_rules" wireframeID="2e">(btTitle)Rules</string>
+    <string name="button_tours" wireframeID="2f">(btTitle)Tours</string>
+    <string name="button_intro_vid" wireframeID="2g">(btTitle)Intro Video</string>
+    <string name="button_help" wireframeID="2h">(btTitle)Help</string>
+    <string name="button_returns" wireframeID="2i">(btTitle)Returns</string>
+    <string name="button_setup" wireframeID="2k">(btTitle)Setup</string>
+
+    <!-- Activation Reriod Module Screen:2.1-->
+    <!--<string name="" wireframeID="2.1b.2">(Activation Period Lable)Activation Period</string>  -->
+    <string name="content_activation_period" wireframeID="2.1b.3">(Extra Content For Activation Period)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Rules Module Screen:2.2 -->
+    <string name="title_rules" wireframeID="2.2b.1">(ScrTitle)Rules</string>
+    <string name="content_rules" wireframeID="2.2b.2">(Rules Content)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Help Module Screen:2.3 -->
+    <string name="title_help" wireframeID="2.3b.1">(ScrTitle)Help</string>
+
+        <string name="subtitle_one_help" wireframeID="2.3b.x">(Help Label 1)These are a list of common FAQ's that relate to troubleshooting on the device</string>
+        <string name="subtitle_two_help" wireframeID="2.3b.x1">(help Label 2)If none of these answers help with your problem, please contact us on our helpline number or via email.</string>
+
+    <string name="content_help" wireframeID="2.3b.2">(Help Content)No Audio\n
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n
+    No GPD signal\n
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Returns Module Screen:2.4 -->
+    <string name="title_returns" wireframeID="2.4b.1">(ScrTitle)Returns</string>
+
+    <!-- Activate Module Screen:2.5 -->
+    <string name="title_activations" wireframeID="2.5b.1">(ScrTitle)Activation</string>
+    <string name="message_activations" wireframeID="2.5b.2">(Activation Message)This Device needs to be activated</string>
+    
+
+    <!-- Tours Screen Screen:3 -->
+    <string name="title_tours" wireframeID="3b">(ScrTitle)Tours</string>
+    <string name="button_start_tours" wireframeID="3h">(btTitle)Start tour</string>
+    <string name="button_optional_sights" wireframeID="3i">(btTitle)Optional Sights</string>
+
+    <!-- Start Tour Module Screen:3.1-->
+    <string name="title_start_tours" wireframeID="3.1b.1">(ScrTitle)Start Tour</string>
+    <string name="label_distance_to_start" wireframeID="3.1b.2">(Distance to start Label)Distance to start:</string>
+    <string name="label_distance_to_nearest" wireframeID="3.1b.3">(Distance to Nearest Label)Distance to nearest point:</string>
+    <string name="label_end_of_tour" wireframeID="3.1b.4">(End of Tour Label)At the end</string>
+
+    <!-- Optional Sights POI list Module Screen:3.2-->
+    <string name="title_optional_sights" wireframeID="3.2b.1">(ScrTitle)Optional sights</string>
+    
+    <!-- Direction Screen Screen:4 -->
+    <string name="title_direction" wireframeID="4b">(ScrTitle)Direction</string>
+
+    <!-- Alternative Transport Module Screen:4.1 -->
+    <string name="title_direction_change" wireframeID="4.1b.1">(ScrTitle)Direction change</string>
+    <!-- <string name="" wireframeID="4.1b.5">(btTitle)Continue Tour</string> -->
+
+    <!-- Search Module Screen:5 -->
+    <string name="title_search" wireframeID="5b">(ScrTitle)Search</string>
+
+    <!-- Information Module Screen:6 -->
+    <string name="label_details" wireframeID="6f">(Details Label)DETAILS || DETAILS || DETAILS</string>
+
+    <!-- Options Screen Screen:7-->
+    <string name="title_options" wireframeID="7b">(ScrTitle)Options</string>
+    <string name="button_unit" wireframeID="7d">(btTitle)Unit</string>
+    <string name="button_lang" wireframeID="7e">(btTitle)Language</string>
+    <string name="button_device_info" wireframeID="7f">(btTitle)Device Info</string>
+    <!-- <string name="" wireframeID="7g">(btTitle)Setup</string>  -->
+
+    <!-- Unit of Measurement Module Screen:7.1-->
+    <string name="title_unit" wireframeID="7.1b.1">(ScrTitle)Unit</string>
+    <string name="label_unit_selection" wireframeID="7.1b.2">(Unit of Measurement Label)Select which unit of measurement you would prefer</string>
+
+    <!-- Lang selection Module Screen7.2-->
+    <string name="title_language" wireframeID="7.2b">(ScrTitle)Language</string>
+    <string name="label_lang_selection" wireframeID="7.2b.1">(Language Label)Select your language preference</string>
+
+    <!-- Device Info Module Screen:7.3-->
+    <string name="title_device_info" wireframeID="7.3b">(ScrTitle)Device Info</string>
+    <string name="label_model" wireframeID="7.3b.1">(Model Label)Model:</string>
+    <string name="label_type" wireframeID="7.3b.2">(Type Label)Type:</string>
+    <string name="content_device_info" wireframeID="7.3b.3">(Extra Device Info Label)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Lost GPS signal Module Screen:8 -->
+    <string name="message_gps_lost" wireframeID="8b">(Lost GPS signal Title)Sorry, we have lost GPS signal. Please carry on with the tour as it does not affect the audio tour.</string>
+
+    <!-- SETUP screen Screen:11 -->
+    <string name="title_setup" wireframeID="11b">(ScrTitle)Setup</string>
+    <string name="button_activate" wireframeID="11e">(btTitle)Activate device</string>
+    <string name="button_reset_tours" wireframeID="11f">(btTitle)Reset Tours</string>
+    <string name="button_device_setup" wireframeID="11g">(btTitle)Device Setup</string>
+
+    <!-- Activation Module Screen:11.1-->
+    <string name="title_activate" wireframeID="11.1b">(ScrTitle)Activate device</string>
+        <string name="label_activate" wireframeID="11.1b.x">(Activation Lable)Please use one of the two methods to input your PIN and CODE</string>
+    <string name="label_online" wireframeID="11.1b.1">(Online Label)Online:</string>
+        <string name="label_online_gps_signal" wireframeID="11.1b.1.x">(Online Gps Signal label)(The Device has a GPS signal)</string>
+    <string name="label_offline" wireframeID="11.1b.2">(Offline Lable)Offline:</string>
+        <string name="label_offline_gps_signal" wireframeID="11.1b.2.x">(Offline Gps Signal label)(The Device does not have a GPS signal)</string>
+
+    <!-- Reset Module Screen:11.2-->
+    <string name="title_reset_tours" wireframeID="11.2b">(ScrTitle)Reset tours</string>
+    <!--    <string name="" wireframeID="11.2b.x">(Activation Lable)Please use one of the two methods to input your PIN and CODE</string>
+    <string name="" wireframeID="11.2b.1">(Online Lable)Online:</string>
+        <string name="" wireframeID="11.2b.1.x">(Online Gps Signal lable)(The Device has a GPS signal)</string>
+    <string name="" wireframeID="11.2b.2">(Offline Lable)Offline:</string>
+        <string name="" wireframeID="11.2b.2.x">(Offline Gps Signal lable)(The Device does not have a GPS signal)</string> -->
+
+    <!-- No Network Available Module Screen:13-->
+    <string name="message_no_network" wireframeID="13b">(No Network Label)Sorry, there is no WiFi network to connect to. Please try again or use the offline option.</string>
+
+    <!-- Invalid PIN/CODE Module Screen:14 -->
+    <string name="message_invalid" wireframeID="13b">(Invalid Pin/Code Label)Sorry, you have entered an incorrect PIN or CODE.\n Please try again. \n If the problem persists, please contact our helpline.</string>
+
+</resources>
+
+</html>

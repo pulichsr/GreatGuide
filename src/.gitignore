@@ -1,0 +1,14 @@
+/.idea
+/bin
+/gen
+/out
+/.classpath
+/.project
+/.settings
+/src/gen
+.DS_Store
+.DS_Store?
+local.properties
+project.properties
+ant.properties
+GreatGuide.iml

@@ -1,0 +1,302 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33D7ECF7-ABD6-446D-A765-DF62C92FF581}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo.GoodGuide.Types</RootNamespace>
+    <AssemblyName>Types.WM5</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>Types</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nucleo.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nucleo.Diagnostics, Version=1.0.4387.18693, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Events, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Events.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nucleo.Gps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Gps.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Plugins, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Plugins.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nucleo.Reflection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Text, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.Text.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nucleo.WinCe, Version=1.0.4575.18904, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.WinCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.XML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.XML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arc.cs" />
+    <Compile Include="AudioSettings.cs" />
+    <Compile Include="BusyIndicator.cs" />
+    <Compile Include="ChannelMedia.cs" />
+    <Compile Include="CircularRegion.cs" />
+    <Compile Include="Configuration\ContentManagerConfiguration.cs" />
+    <Compile Include="Configuration\GpsConfiguration.cs" />
+    <Compile Include="Configuration\TripRecorderConfiguration.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ConfigurationParameters.cs" />
+    <Compile Include="FileBasedConfigParameter.cs" />
+    <Compile Include="DataObjects\Region.cs" />
+    <Compile Include="DataObjects\Street.cs" />
+    <Compile Include="Events\ApplicationEvents\VideoSizeEvent.cs" />
+    <Compile Include="Interfaces\IBusyIndicator.cs" />
+    <Compile Include="Interfaces\IMessageDisplay.cs" />
+    <Compile Include="Interfaces\Search\IDestinationSelector.cs" />
+    <Compile Include="Interfaces\Search\IDestinationSearcher.cs" />
+    <Compile Include="Interfaces\Search\IDestinationSearchDataProvider.cs" />
+    <Compile Include="Interfaces\Search\IRegionConfirmer.cs" />
+    <Compile Include="Interfaces\Search\IRegionSelector.cs" />
+    <Compile Include="Interfaces\Search\IRegionSearcher.cs" />
+    <Compile Include="Interfaces\Search\IRegionSearchDataProvider.cs" />
+    <Compile Include="Interfaces\Search\IStreetNumberEntry.cs" />
+    <Compile Include="Interfaces\Search\IStreetConfirmer.cs" />
+    <Compile Include="Interfaces\Search\IStreetSearchDataProvider.cs" />
+    <Compile Include="Interfaces\Search\IStreetSelector.cs" />
+    <Compile Include="Interfaces\Dal\ISearchRegiontRepository.cs" />
+    <Compile Include="Interfaces\Dal\ISearchStreetRepository.cs" />
+    <Compile Include="Interfaces\ICurrentLocationSource.cs" />
+    <Compile Include="Interfaces\Search\IStreetLocationProvider.cs" />
+    <Compile Include="Interfaces\Search\IStreetSearcher.cs" />
+    <Compile Include="ItineraryFileLocator.cs" />
+    <Compile Include="LoggerFactory.cs" />
+    <Compile Include="NotificationDefinition.cs" />
+    <Compile Include="NotificationDefinitionFactory.cs" />
+    <Compile Include="NotificationDefinitionsFactory.cs" />
+    <Compile Include="NotificationType.cs" />
+    <Compile Include="VideoSize.cs" />
+    <Compile Include="DataObjects\Channel.cs" />
+    <Compile Include="DataObjects\ChannelChannelGroup.cs" />
+    <Compile Include="DataObjects\ChannelContent.cs" />
+    <Compile Include="DataObjects\ChannelGroup.cs" />
+    <Compile Include="DataObjects\ConfigParameter.cs" />
+    <Compile Include="DataObjects\ContentItem.cs" />
+    <Compile Include="DataObjects\ControlDefinition.cs" />
+    <Compile Include="DataObjects\Destination.cs" />
+    <Compile Include="DataObjects\DestinationClassification.cs" />
+    <Compile Include="DataObjects\DestinationCollection.cs" />
+    <Compile Include="DataObjects\DestinationCollectionMember.cs" />
+    <Compile Include="DataObjects\DestinationType.cs" />
+    <Compile Include="DataObjects\FormDefinition.cs" />
+    <Compile Include="DataObjects\GpsRegion.cs" />
+    <Compile Include="DataObjects\Itinerary.cs" />
+    <Compile Include="DataObjects\ItineraryDay.cs" />
+    <Compile Include="DataObjects\ItineraryDestination.cs" />
+    <Compile Include="DataObjects\Licence.cs" />
+    <Compile Include="DataObjects\ManualMediaItem.cs" />
+    <Compile Include="DataObjects\MasterArea.cs" />
+    <Compile Include="DataObjects\MySelection.cs" />
+    <Compile Include="DataObjects\RecentDestination.cs" />
+    <Compile Include="DataObjects\Theme.cs" />
+    <Compile Include="DataObjects\WaypointData.cs" />
+    <Compile Include="Events\ApplicationEvents\ActiveRegionsEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ApplicationEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\BeaconArrivalEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ChannelContentCollectionEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ConnectionPollEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ConnectionStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ConnectionStateEventArgs.cs" />
+    <Compile Include="Events\ApplicationEvents\ContentControlEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MediaTypeEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\NavigatorDirectionsEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MediaPositionEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\NavigatorAddressSearchEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\CurrentRegionsEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\DestinationNavigationEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\DestinationRouterStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\EboxPollEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\EboxStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\EntityEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\GetTextEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\GpsFixStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\GpsPositionEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\GpsRawEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MasterAreaEnterEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MasterAreaExitEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MediaControlEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\MediaStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\NavigatorAnnouncementEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\LanguageEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\NavigatorPositionEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\NavigatorRouteEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\PoiCategoryListEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\PoiDestinationListEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\PoiSubcategoryListEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\PostStartupInitialisationEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\RegionEnterEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\RegionEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\RegionExitEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ResetNavigatorLanguageEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ShowFormEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\ShowNavigatorDialogEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\SystemResetContentEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\SystemResetCountsEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\SystemStopAllContentEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\TripRecorderControlEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\TripRecorderStateEvent.cs" />
+    <Compile Include="Events\ApplicationEvents\UnitsEvent.cs" />
+    <Compile Include="Events\ControlEvents\ConfigurationEvent.cs" />
+    <Compile Include="Events\ControlEvents\ControlEvent.cs" />
+    <Compile Include="Events\ControlEvents\LoggingStateEvent.cs" />
+    <Compile Include="Events\ControlEvents\RunStateEvent.cs" />
+    <Compile Include="Events\EventTopics.cs" />
+    <Compile Include="Events\GoodGuideEvent.cs" />
+    <Compile Include="Events\GoodGuideEventArgs.cs" />
+    <Compile Include="EventWindow.cs" />
+    <Compile Include="GpsPositionSources.cs" />
+    <Compile Include="IDestinationTypeImageIndexMapper.cs" />
+    <Compile Include="IGoodGuidePlugin.cs" />
+    <Compile Include="Interfaces\IWelcomeAdProvider.cs" />
+    <Compile Include="Interfaces\Dal\IChannelContenRepository.cs" />
+    <Compile Include="Interfaces\Dal\IChannelGroupRepository.cs" />
+    <Compile Include="Interfaces\Dal\IChannelRepository.cs" />
+    <Compile Include="Interfaces\Dal\IContentItemRepository.cs" />
+    <Compile Include="Interfaces\Dal\IControlDefinitionRepository.cs" />
+    <Compile Include="Interfaces\Dal\IDestinationClassificationRepository.cs" />
+    <Compile Include="Interfaces\Dal\IDestinationCollectionMemberRepository.cs" />
+    <Compile Include="Interfaces\Dal\IDestinationCollectionRepository.cs" />
+    <Compile Include="Interfaces\Dal\IDestinationRepository.cs" />
+    <Compile Include="Interfaces\Dal\IDestinationTypeRepository.cs" />
+    <Compile Include="Interfaces\Dal\IFormDefinitionRepository.cs" />
+    <Compile Include="Interfaces\Dal\IGpsRegionRepository.cs" />
+    <Compile Include="Interfaces\Dal\IItineraryDayRepository.cs" />
+    <Compile Include="Interfaces\Dal\IItineraryDestinationRepository.cs" />
+    <Compile Include="Interfaces\Dal\IItineraryRepository.cs" />
+    <Compile Include="Interfaces\Dal\IMasterAreaRepository.cs" />
+    <Compile Include="Interfaces\Dal\IMySelectionRepository.cs" />
+    <Compile Include="Interfaces\Dal\IRecentDestinationRepository.cs" />
+    <Compile Include="Interfaces\Dal\IRepository.cs" />
+    <Compile Include="Interfaces\Dal\IRepositoryLocator.cs" />
+    <Compile Include="Interfaces\Dal\IThemeRepository.cs" />
+    <Compile Include="Interfaces\Device\IDeviceServices.cs" />
+    <Compile Include="Interfaces\DriverDisplay\IDriverDisplay.cs" />
+    <Compile Include="Interfaces\DriverDisplay\IDriverDisplayServices.cs" />
+    <Compile Include="Interfaces\IBannerAdProvider.cs" />
+    <Compile Include="Interfaces\ILicence.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Interfaces\INavigator.cs" />
+    <Compile Include="Interfaces\Media\IMediaPlayer.cs" />
+    <Compile Include="Interfaces\OperatingSystemServices\IOperatingSystemServices.cs" />
+    <Compile Include="ItineraryFile.cs" />
+    <Compile Include="LicenceSerializer.cs" />
+    <Compile Include="LoggingHelper.cs" />
+    <Compile Include="LoggingServices.cs" />
+    <Compile Include="MediaTypes.cs" />
+    <Compile Include="MoreResults.cs" />
+    <Compile Include="NavigatorAddress.cs" />
+    <Compile Include="PluginKinds.cs" />
+    <Compile Include="Units.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="PoiSubcategory.cs" />
+    <Compile Include="DestinatorRegistration.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="DestinationListFormData.cs" />
+    <Compile Include="DistanceFormatter.cs" />
+    <Compile Include="GeoRegion.cs" />
+    <Compile Include="GoodGuideEventBroker.cs" />
+    <Compile Include="GoodGuideEventPublication.cs" />
+    <Compile Include="GoodGuidePlugin.cs" />
+    <Compile Include="MggrLoader.cs" />
+    <Compile Include="PoiCategory.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="PolygonRegion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommendation.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="IRegionCache.cs" />
+    <Compile Include="Regions.cs" />
+    <Compile Include="RegionChecker.cs" />
+    <Compile Include="ScrollDirection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datasets.WM5\Datasets.WM5.csproj">
+      <Project>{55ECDDCB-C846-4B6C-B2F4-3D1771768FBA}</Project>
+      <Name>Datasets.WM5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

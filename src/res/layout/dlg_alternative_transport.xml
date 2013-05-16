@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlg_returns"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_80"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dlg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/dlg_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/undefined"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/dlg_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/undefined"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <!--
+    <fragment
+        android:id="@+id/dlg_hire_period_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.greatguide.ui.fragment.DialogTitleFragment"
+        tools:layout="@layout/fragment_dlg_title_row" />
+    -->
+
+    <TextView
+        android:id="@+id/dlg_alttrans_tour_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_below="@+id/dlg_title"
+        android:gravity="left|top"
+        android:text="History Tour"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/dlg_alttrans_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_below="@+id/dlg_alttrans_tour_name"
+        android:gravity="left|top"
+        android:text="Please use the following directions to get to the next part of the tour:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/horizonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium"
+            android:src="@drawable/horizontal" />
+
+        <ImageView
+            android:id="@+id/dlg_alttrans_continue_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/horizonal"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_ic_tour_start" />
+
+        <TextView
+            android:id="@+id/dlg_alttrans_continue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dlg_alttrans_continue_icon"
+            android:layout_toRightOf="@+id/dlg_alttrans_continue_icon"
+            android:text="Continue Tour" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dlg_alttrans_continue_title"
+            android:layout_below="@+id/dlg_alttrans_continue_title"
+            android:text="Once you have reached street level, please press Continue" />
+    </RelativeLayout>
+
+</RelativeLayout>

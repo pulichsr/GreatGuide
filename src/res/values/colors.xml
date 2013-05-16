@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_30">#CCC</color>
+    <color name="grey_80">#AAA</color>
+    <color name="white">#FFF</color>
+    
+    <!-- INFO BAR -->
+    <color name="status_bar">#123622</color>
+    <!-- HOME SCREEN TILES -->
+    <color name="hire_tile">#E88428</color>
+    <color name="tours_tile">#74B723</color>
+    <color name="help_tile">#CC2C1E</color>
+    <color name="returns_tile">#4AB4BB</color>
+    <color name="rules_tile">#6834B3</color>
+    <color name="intro_tile">#004DC9</color>
+    <color name="setup_tile">#C448CA</color>
+    
+    <!-- TOURS -->
+    <color name="tour_start_bar">#AEB929</color>
+    
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DestinationCollectionMemberDataset" targetNamespace="http://tempuri.org/DestinationCollectionMemberDataset.xsd" xmlns:mstns="http://tempuri.org/DestinationCollectionMemberDataset.xsd" xmlns="http://tempuri.org/DestinationCollectionMemberDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DestinationCollectionMemberDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DestinationCollectionMemberDataset" msprop:Generator_DataSetName="DestinationCollectionMemberDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DestinationCollectionMember" msprop:Generator_UserTableName="DestinationCollectionMember" msprop:Generator_RowDeletedName="DestinationCollectionMemberRowDeleted" msprop:Generator_TableClassName="DestinationCollectionMemberDataTable" msprop:Generator_RowChangedName="DestinationCollectionMemberRowChanged" msprop:Generator_RowClassName="DestinationCollectionMemberRow" msprop:Generator_RowChangingName="DestinationCollectionMemberRowChanging" msprop:Generator_RowEvArgName="DestinationCollectionMemberRowChangeEvent" msprop:Generator_RowEvHandlerName="DestinationCollectionMemberRowChangeEventHandler" msprop:Generator_TablePropName="DestinationCollectionMember" msprop:Generator_TableVarName="tableDestinationCollectionMember" msprop:Generator_RowDeletingName="DestinationCollectionMemberRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CollectionId" msprop:Generator_UserColumnName="CollectionId" msprop:Generator_ColumnPropNameInRow="CollectionId" msprop:Generator_ColumnVarNameInTable="columnCollectionId" msprop:Generator_ColumnPropNameInTable="CollectionIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DestinationId" msprop:Generator_UserColumnName="DestinationId" msprop:Generator_ColumnPropNameInRow="DestinationId" msprop:Generator_ColumnVarNameInTable="columnDestinationId" msprop:Generator_ColumnPropNameInTable="DestinationIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

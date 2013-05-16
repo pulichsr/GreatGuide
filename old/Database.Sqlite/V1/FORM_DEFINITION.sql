@@ -1,0 +1,22 @@
+create table FORM_DEFINITION
+(
+	ID integer not null primary key,
+	NAME text,
+	FORM_TYPE_NAME text,
+	TEXT text,
+	GRAPHIC_RESOURCE_NAME text,
+	MASTER_AREA_ID integer,
+	AD_NAME text
+);
+
+create view VW_FORM_DEFINITION
+as select
+	ID,
+	NAME,
+	FORM_TYPE_NAME as FORMTYPENAME,
+	'TEXT',
+	GRAPHIC_RESOURCE_NAME as GRAPHICRESOURCENAME,
+	MASTER_AREA_ID as MASTERAREAID,
+        AD_NAME as ADNAME
+from FORM_DEFINITION;
+

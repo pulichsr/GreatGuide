@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChannelChannelGroupDataset" targetNamespace="http://tempuri.org/ChannelChannelGroupDataset.xsd" xmlns:mstns="http://tempuri.org/ChannelChannelGroupDataset.xsd" xmlns="http://tempuri.org/ChannelChannelGroupDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ChannelChannelGroupDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ChannelChannelGroupDataset" msprop:Generator_DataSetName="ChannelChannelGroupDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChannelChannelGroup" msprop:Generator_UserTableName="ChannelChannelGroup" msprop:Generator_RowDeletedName="ChannelChannelGroupRowDeleted" msprop:Generator_RowChangedName="ChannelChannelGroupRowChanged" msprop:Generator_RowClassName="ChannelChannelGroupRow" msprop:Generator_RowChangingName="ChannelChannelGroupRowChanging" msprop:Generator_RowEvArgName="ChannelChannelGroupRowChangeEvent" msprop:Generator_RowEvHandlerName="ChannelChannelGroupRowChangeEventHandler" msprop:Generator_TableClassName="ChannelChannelGroupDataTable" msprop:Generator_TableVarName="tableChannelChannelGroup" msprop:Generator_RowDeletingName="ChannelChannelGroupRowDeleting" msprop:Generator_TablePropName="ChannelChannelGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ChannelGroupId" msprop:Generator_UserColumnName="ChannelGroupId" msprop:Generator_ColumnVarNameInTable="columnChannelGroupId" msprop:Generator_ColumnPropNameInRow="ChannelGroupId" msprop:Generator_ColumnPropNameInTable="ChannelGroupIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ChannelGroupName" msprop:Generator_UserColumnName="ChannelGroupName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ChannelGroupName" msprop:Generator_ColumnPropNameInTable="ChannelGroupNameColumn" msprop:Generator_ColumnVarNameInTable="columnChannelGroupName" type="xs:string" minOccurs="0" />
+              <xs:element name="ChannelId" msprop:Generator_UserColumnName="ChannelId" msprop:Generator_ColumnVarNameInTable="columnChannelId" msprop:Generator_ColumnPropNameInRow="ChannelId" msprop:Generator_ColumnPropNameInTable="ChannelIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ChannelContentPath" msprop:Generator_UserColumnName="ChannelContentPath" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ChannelContentPath" msprop:Generator_ColumnPropNameInTable="ChannelContentPathColumn" msprop:Generator_ColumnVarNameInTable="columnChannelContentPath" type="xs:string" minOccurs="0" />
+              <xs:element name="ChannelLanguage" msprop:Generator_UserColumnName="ChannelLanguage" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ChannelLanguage" msprop:Generator_ColumnPropNameInTable="ChannelLanguageColumn" msprop:Generator_ColumnVarNameInTable="columnChannelLanguage" type="xs:string" minOccurs="0" />
+              <xs:element name="ChannelGroupContentPath" msprop:Generator_UserColumnName="ChannelGroupContentPath" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnChannelGroupContentPath" msprop:Generator_ColumnPropNameInTable="ChannelGroupContentPathColumn" msprop:Generator_ColumnPropNameInRow="ChannelGroupContentPath" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

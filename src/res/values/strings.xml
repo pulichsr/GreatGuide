@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Great Guide</string>
+    <string name="title_activity_main">Main</string>
+    <string name="no_songs_on_SD_Card">No songs found on SD Card.</string>
+    <string name="sdcardpath"></string>
+    <string name="mockGPSEnabled">false</string>
+    <string name="staticMap">false</string>
+    <string name="downloadMap">false</string>
+    <string name="mapDefaultZoomLevel">18</string>
+    <string name="hello_world">Hello World</string>
+    <string name="undefined">Undefined</string>
+
+    <!-- Test Activity Strings -->
+    <string name="pause">Pause</string>
+    <string name="decreaseVolume">DecreaseVolume</string>
+    <string name="increaseVolume">IncreaseVolume</string>
+    <string name="stop">Stop</string>
+    <string name="playVideo">Play Video</string>
+    
+    <!-- HEADER -->
+    <string name="header_volumn">VOLUME</string>
+    <string name="header_time">TIME</string>
+    <string name="header_gps_status">GPS Status</string>
+    <string name="header_battery">BATTERY</string>
+
+    <!-- TITLE -->
+    <string name="title_temp">Title</string>
+    <string name="title_button_1">Button 1</string>
+    <string name="title_button_2">Button 2</string>
+    <string name="title_button_3">Button 3</string>
+    
+    <!-- PAGE TITLES -->
+	<string name="title_direction">Direction</string>
+	<string name="title_tours">Tours</string>
+	<string name="title_home">Home</string>
+	<string name="title_options">Options</string>
+	
+	<!-- HOME TILES -->
+	<string name="home_tile_intro">Intro Video</string>
+	<string name="home_tile_help">Help</string>
+	<string name="home_tile_returns">Returns</string>
+	<string name="home_tile_rules">Rules</string>
+	<string name="home_tile_setup">Setup</string>
+	<string name="home_tile_hire_period">Hire Period:</string>
+	
+	<string name="dlg_tech_help_label">Technical Help</string>
+	<string name="dlg_tech_help_telephone">0860 6789 6789</string>
+	<string name="dlg_tech_help_url">www.greatguide.com/walkingguide/help</string>
+	<string name="dlg_tech_help_email">help@ggwalking.com</string>
+	<string name="dlg_tech_help_local_taxi_label">Local Taxi Service</string>
+	<string name="dlg_tech_help_local_taxi_telephone">0860 6767 67</string>
+	
+	<!-- RETURNS DIALOG -->
+	<string name="dlg_returns_metro_label">Metro</string>
+	<string name="dlg_returns_bus_label">Bus</string>
+	
+    <!--- Temporary setup Route for static map as destination.route 0 -->
+    <string name="routeDestinationLatitude">-33.89615</string>
+    <string name="routeDestinationLongitude">18.5372</string>
+    
+    <!--  TOURS -->
+    <string name="tour_start_tile">Start tour</string>
+    <string name="tour_highlights_tile">Optional sights</string>
+    <string name="tour_start_distance_to_start">Distance to start:</string>
+    <string name="tour_start_distance_to_nearest_map_point">Distance to nearest map point:</string>
+    <string name="tour_start_at_the_end">At the end:</string>
+    
+    <!-- TOURS ADDON -->
+    <string name="tour_addon_title">Addons</string>
+
+    <!-- SETUP ADDON -->
+    <string name="setup_title">Setup</string>
+    <string name="setup_activate_device">Activate device</string>
+    <string name="setup_reset_tours">Reset tours</string>
+    <string name="setup_device_setup">Device setup</string>
+    
+    <!-- Route Process -->
+    <string name="route_process_successful">Route successfully imported</string>
+    <string name="route_process_error">Error importing route. Please check error log</string>
+    <string name="route_link_to_service">Unable to link to back-end service for handle of route media. </string>
+</resources>

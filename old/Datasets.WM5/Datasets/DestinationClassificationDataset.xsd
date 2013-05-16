@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DestinationClassificationDataset" targetNamespace="http://tempuri.org/DestinationClassificationDataset.xsd" xmlns:mstns="http://tempuri.org/DestinationClassificationDataset.xsd" xmlns="http://tempuri.org/DestinationClassificationDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DestinationClassificationDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DestinationClassificationDataset" msprop:Generator_DataSetName="DestinationClassificationDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DestinationClassification" msprop:Generator_UserTableName="DestinationClassification" msprop:Generator_RowDeletedName="DestinationClassificationRowDeleted" msprop:Generator_TableClassName="DestinationClassificationDataTable" msprop:Generator_RowChangedName="DestinationClassificationRowChanged" msprop:Generator_RowClassName="DestinationClassificationRow" msprop:Generator_RowChangingName="DestinationClassificationRowChanging" msprop:Generator_RowEvArgName="DestinationClassificationRowChangeEvent" msprop:Generator_RowEvHandlerName="DestinationClassificationRowChangeEventHandler" msprop:Generator_TablePropName="DestinationClassification" msprop:Generator_TableVarName="tableDestinationClassification" msprop:Generator_RowDeletingName="DestinationClassificationRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DestinationTypeId" msprop:Generator_UserColumnName="DestinationTypeId" msprop:Generator_ColumnPropNameInRow="DestinationTypeId" msprop:Generator_ColumnVarNameInTable="columnDestinationTypeId" msprop:Generator_ColumnPropNameInTable="DestinationTypeIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_ColumnPropNameInRow="Code" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

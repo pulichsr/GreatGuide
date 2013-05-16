@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tourDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:text="Take tour on map" />
+
+    <Button
+        android:id="@+id/btnTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:layout_above="@+id/prepareDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Take Tour" />
+
+    <!-- Anchor point -->
+    <TextView
+        android:id="@+id/prepareDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="Prepare the static maps" />
+
+    <Button
+        android:id="@+id/btnPrepareMapData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prepareDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:text="Prepare Map Data" />
+
+    <TextView
+        android:id="@+id/statusDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrepareMapData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:text=""
+        android:textColor="#f00" />
+
+</RelativeLayout>

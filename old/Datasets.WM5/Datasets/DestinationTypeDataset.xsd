@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DestinationTypeDataset" targetNamespace="http://tempuri.org/DestinationTypeDataset.xsd" xmlns:mstns="http://tempuri.org/DestinationTypeDataset.xsd" xmlns="http://tempuri.org/DestinationTypeDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DestinationTypeDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DestinationTypeDataset" msprop:Generator_DataSetName="DestinationTypeDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DestinationType" msprop:Generator_UserTableName="DestinationType" msprop:Generator_RowDeletedName="DestinationTypeRowDeleted" msprop:Generator_RowChangedName="DestinationTypeRowChanged" msprop:Generator_RowClassName="DestinationTypeRow" msprop:Generator_RowChangingName="DestinationTypeRowChanging" msprop:Generator_RowEvArgName="DestinationTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="DestinationTypeRowChangeEventHandler" msprop:Generator_TableClassName="DestinationTypeDataTable" msprop:Generator_TableVarName="tableDestinationType" msprop:Generator_RowDeletingName="DestinationTypeRowDeleting" msprop:Generator_TablePropName="DestinationType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_ColumnPropNameInRow="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment1Label" msprop:Generator_UserColumnName="Comment1Label" msprop:Generator_ColumnPropNameInRow="Comment1Label" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnComment1Label" msprop:Generator_ColumnPropNameInTable="Comment1LabelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment2Label" msprop:Generator_UserColumnName="Comment2Label" msprop:Generator_ColumnPropNameInRow="Comment2Label" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnComment2Label" msprop:Generator_ColumnPropNameInTable="Comment2LabelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment3Label" msprop:Generator_UserColumnName="Comment3Label" msprop:Generator_ColumnPropNameInRow="Comment3Label" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnComment3Label" msprop:Generator_ColumnPropNameInTable="Comment3LabelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment4Label" msprop:Generator_UserColumnName="Comment4Label" msprop:Generator_ColumnPropNameInRow="Comment4Label" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnComment4Label" msprop:Generator_ColumnPropNameInTable="Comment4LabelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IconResourceName" msprop:Generator_UserColumnName="IconResourceName" msprop:Generator_ColumnPropNameInRow="IconResourceName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnIconResourceName" msprop:Generator_ColumnPropNameInTable="IconResourceNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

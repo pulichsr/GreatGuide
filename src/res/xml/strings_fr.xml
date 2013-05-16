@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">GreatGuide</string>
+    <string name="Lang">langues</string>
+
+    <string name="AudioPlay">jouer</string>
+    <string name="AudioStop">arrêter</string>
+    <string name="AudioPause">arrêt</string>
+    <string name="AudioResume">reprendre</string>
+    <string name="AudioIncreaseVolume">augmenter le volume</string>
+    <string name="AudioDecreaseVolume">diminuer le volume</string>
+    <string name="AudioStopRepeat">arrêtez Répéter</string>
+    <string name="AudioResumeRepeat">reprendre Répéter</string>
+
+    <string name="errorGPSNotEnabled">GPS Device Not Enabled</string>
+
+</resources>

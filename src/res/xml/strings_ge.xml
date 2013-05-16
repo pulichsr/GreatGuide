@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Welcome Screen Screen:1-->
+    <string name="1b">(Title)Welcome Screen</string>
+    <string name="1c">(Version Info)Version: 1.10745b</string>
+
+    <!-- Home Screen Screen:2-->
+    <string name="2b">(ScrTitle)Huis</string>
+    <string name="2d">(Activation Period Lable)Activation Period</string>
+    <string name="2e">(btTitle)Rules</string>
+    <string name="2f">(btTitle)Tours</string>
+    <string name="2g">(btTitle)Intro Video</string>
+    <string name="2h">(btTitle)Help</string>
+    <string name="2i">(btTitle)Returns</string>
+    <string name="2k">(btTitle)Setup</string>
+
+    <!-- Activation Reriod Module Screen:2.1-->
+    <string name="2.1b.2">(Activation Period Lable)Activation Period</string>
+    <string name="2.1b.3">(Extra Content For Activation Period)Blah blah blah blah</string>
+
+    <!-- Rules Module Screen:2.2 -->
+    <string name="2.2b.1">(ScrTitle)Rules</string>
+    <string name="2.2b.2">(Rules Content)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Help Module Screen:2.3 -->
+    <string name="2.3b.1">(ScrTitle)Help</string>
+
+    <string name="2.3b.x">(Help Label 1)These are a list of common FAQ's that relate to troubleshooting on the device</string>
+    <string name="2.3b.x1">(help Label 2)If none of these answers help with your problem, please contact us on our helpline number or via email.</string>
+
+    <string name="2.3b.2">(Help Content)No Audio\n
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n
+        No GPD signal\n
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Returns Module Screen:2.4 -->
+    <string name="2.4b.1">(ScrTitle)Returns</string>
+
+    <!-- Activate Module Screen:2.5 -->
+    <string name="2.5b.1">(ScrTitle)Activation</string>
+    <string name="2.5b.2">(Activation Meassage)This Device needs to be activated</string>
+
+
+    <!-- Tours Screen Screen:3 -->
+    <string name="3b">(ScrTitle)Tours</string>
+    <string name="3h">(btTitle)Start tour</string>
+    <string name="3i">(btTitle)Optional Sights</string>
+
+    <!-- Start Tour Module Screen:3.1-->
+    <string name="3.1b.1">(ScrTitle)Start Tour</string>
+    <string name="3.1b.2">(Distance to start Lable)Distance to start:</string>
+    <string name="3.1b.3">(Distance to Nearest Lable)Distance to nearest point:</string>
+    <string name="3.1b.4">(End of Tour Lable)At the end</string>
+
+    <!-- Optional Sights POI list Module Screen:3.2-->
+    <string name="3.2b.1">(ScrTitle)Optional sights</string>
+
+    <!-- Direction Screen Screen:4 -->
+    <string name="4b">(ScrTitle)Direction</string>
+
+    <!-- Alternative Transport Module Screen:4.1 -->
+    <string name="4.1b.1">(ScrTitle)Direction change</string>
+    <string name="4.1b.5">(btTitle)Continue Tour</string>
+
+    <!-- Search Module Screen:5 -->
+    <string name="5b">(ScrTitle)Search</string>
+
+    <!-- Information Module Screen:6 -->
+    <string name="6f">(Details Label)DETAILS || DETAILS || DETAILS</string>
+
+    <!-- Options Screen Screen:7-->
+    <string name="7b">(ScrTitle)Options</string>
+    <string name="7d">(btTitle)Unit</string>
+    <string name="7e">(btTitle)Language</string>
+    <string name="7f">(btTitle)Device Info</string>
+    <string name="7g">(btTitle)Setup</string>
+
+    <!-- Unit of Measurement Module Screen:7.1-->
+    <string name="7.1b.1">(ScrTitle)Unit</string>
+    <string name="7.1b.2">(Unit of Measurement Label)Slelect which unit of measurement you would prefer</string>
+
+    <!-- Lang selection Module Screen7.2-->
+    <string name="7.2b">(ScrTitle)Language</string>
+    <string name="7.2b.1">(Language Lable)Select your language preference</string>
+
+    <!-- Device Info Module Screen:7.3-->
+    <string name="7.3b">(ScrTitle)Device Info</string>
+    <string name="7.3b.1">(Model Lable)Model:</string>
+    <string name="7.3b.2">(Type Lable)Type:</string>
+    <string name="7.3b.3">(Exstra Device Info Lable)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Lost GPS signal Module Screen:8 -->
+    <string name="8b">(Lost GPS signal Title)Sorry, we have lost GPS signal. Please carry on with the tour as it does not affect the audio tour.</string>
+
+    <!-- SETUP screen Screen:11 -->
+    <string name="11b">(ScrTitle)Setup</string>
+    <string name="11e">(btTitle)Activate device</string>
+    <string name="11f">(btTitle)Reset Tours</string>
+    <string name="11g">(btTitle)Device Setup</string>
+
+    <!-- Activation Module Screen:11.1-->
+    <string name="11.1b">(ScrTitle)Activate device</string>
+    <string name="11.1b.x">(Activation Lable)Please use one of the two methods to input your PIN and CODE</string>
+    <string name="11.1b.1">(Online Lable)Online:</string>
+    <string name="11.1b.1.x">(Online Gps Signal lable)(The Device has a GPS signal)</string>
+    <string name="11.1b.2">(Offline Lable)Offline:</string>
+    <string name="11.1b.2.x">(Offline Gps Signal lable)(The Device does not have a GPS signal)</string>
+
+    <!-- Reset Module Screen:11.2-->
+    <string name="11.2b">(ScrTitle)Reset tours</string>
+    <string name="11.2b.x">(Activation Lable)Please use one of the two methods to input your PIN and CODE</string>
+    <string name="11.2b.1">(Online Lable)Online:</string>
+    <string name="11.2b.1.x">(Online Gps Signal lable)(The Device has a GPS signal)</string>
+    <string name="11.2b.2">(Offline Lable)Offline:</string>
+    <string name="11.2b.2.x">(Offline Gps Signal lable)(The Device does not have a GPS signal)</string>
+
+    <!-- No Network Available Module Screen:13-->
+    <string name="13b">(No Network Labal)Sorry, there is no WiFi network to connect to. Please try again or use the offline option.</string>
+
+    <!-- Invalid PIN/CODE Module Screen:14 -->
+    <string name="13b">(Invalid Pin/Code Labal)Sorry, you have entered an incorrect PIN or CODE.\n Please try again. \n If the problem persists, please contact our helpline.</string>
+</resources>

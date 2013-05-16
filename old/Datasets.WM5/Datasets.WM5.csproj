@@ -1,0 +1,479 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55ECDDCB-C846-4B6C-B2F4-3D1771768FBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo.GoodGuide.Datasets</RootNamespace>
+    <AssemblyName>Datasets.WM5</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>Datasets.WM5</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Dll.WM5\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Nucleo.XML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetRepository\CF2 WM5\Dll\Nucleo.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelContentCollection.cs" />
+    <Compile Include="ChannelContentHelper.cs" />
+    <Compile Include="Datasets\ChannelChannelGroupDataset.cs">
+      <DependentUpon>ChannelChannelGroupDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ChannelChannelGroupDataset.Designer.cs">
+      <DependentUpon>ChannelChannelGroupDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ChannelContentDataset.cs">
+      <DependentUpon>ChannelContentDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ChannelContentDataset.Designer.cs">
+      <DependentUpon>ChannelContentDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ChannelContentDataset.Generated.cs" />
+    <Compile Include="Datasets\ChannelDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChannelDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ChannelDataset.Generated.cs" />
+    <Compile Include="Datasets\ChannelGroupDataset.Designer.cs">
+      <DependentUpon>ChannelGroupDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ChannelGroupDataset.Generated.cs" />
+    <Compile Include="Datasets\ConfigParameterDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigParameterDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ConfigParameterDataset.Generated.cs" />
+    <Compile Include="Datasets\ContentItemDataset.Designer.cs">
+      <DependentUpon>ContentItemDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ContentItemDataset.Generated.cs" />
+    <Compile Include="Datasets\ControlDefinitionDataset.Designer.cs">
+      <DependentUpon>ControlDefinitionDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ControlDefinitionDataset.Generated.cs" />
+    <Compile Include="Datasets\DestinationClassificationDataset.Designer.cs">
+      <DependentUpon>DestinationClassificationDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\DestinationClassificationDataset.Generated.cs" />
+    <Compile Include="Datasets\DestinationCollectionDataset.Designer.cs">
+      <DependentUpon>DestinationCollectionDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\DestinationCollectionDataset.Generated.cs" />
+    <Compile Include="Datasets\DestinationCollectionMemberDataset.Designer.cs">
+      <DependentUpon>DestinationCollectionMemberDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\DestinationCollectionMemberDataset.Generated.cs" />
+    <Compile Include="Datasets\DestinationDataset.Designer.cs">
+      <DependentUpon>DestinationDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\DestinationDataset.Generated.cs" />
+    <Compile Include="Datasets\DestinationTypeDataset.Designer.cs">
+      <DependentUpon>DestinationTypeDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\DestinationTypeDataset.Generated.cs" />
+    <Compile Include="Datasets\FormDefinitionDataset.Designer.cs">
+      <DependentUpon>FormDefinitionDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\FormDefinitionDataset.Generated.cs" />
+    <Compile Include="Datasets\GpsRegionDataset.cs">
+      <DependentUpon>GpsRegionDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GpsRegionDataset.Designer.cs">
+      <DependentUpon>GpsRegionDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\GpsRegionDataset.Generated.cs" />
+    <Compile Include="Datasets\ItineraryDataset.Designer.cs">
+      <DependentUpon>ItineraryDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ItineraryDataset.Generated.cs" />
+    <Compile Include="Datasets\ItineraryDayDataset.Designer.cs">
+      <DependentUpon>ItineraryDayDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ItineraryDayDataset.Generated.cs" />
+    <Compile Include="Datasets\ItineraryDestinationDataset.Designer.cs">
+      <DependentUpon>ItineraryDestinationDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ItineraryDestinationDataset.Generated.cs" />
+    <Compile Include="Datasets\MasterAreaDataset.Designer.cs">
+      <DependentUpon>MasterAreaDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\MasterAreaDataset.Generated.cs" />
+    <Compile Include="Datasets\MySelectionDataset.Designer.cs">
+      <DependentUpon>MySelectionDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\MySelectionDataset.Generated.cs" />
+    <Compile Include="XmlDatasets\GetDataResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Datasets\RecentDestinationDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecentDestinationDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\RecentDestinationDataset.Generated.cs" />
+    <Compile Include="Datasets\ThemeDataset.Designer.cs">
+      <DependentUpon>ThemeDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Datasets\ThemeDataset.Generated.cs" />
+    <Compile Include="XmlDatasets\ChannelContentXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ChannelGroupXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ChannelXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ContentItemXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ControlDefinitionXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\DecoderFactory.cs" />
+    <Compile Include="XmlDatasets\DestinationClassificationXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\DestinationCollectionMemberXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\DestinationCollectionXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\DestinationTypeXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\DestinationXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\EncoderFactory.cs" />
+    <Compile Include="XmlDatasets\FormDefinitionXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\GpsRegionXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ItineraryDayXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ItineraryDestinationXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ItineraryXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\MasterAreaXmlDataTable.cs" />
+    <Compile Include="XmlDatasets\ThemeXmlDataTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\ChannelChannelGroupDataset.xsc">
+      <DependentUpon>ChannelChannelGroupDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelChannelGroupDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChannelChannelGroupDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ChannelChannelGroupDataset.xss">
+      <DependentUpon>ChannelChannelGroupDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelContentDataset.xsc">
+      <DependentUpon>ChannelContentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelContentDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChannelContentDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ChannelContentDataset.xss">
+      <DependentUpon>ChannelContentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelDataset.xsc">
+    </None>
+    <None Include="Datasets\ChannelDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChannelDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ChannelDataset.xss">
+      <DependentUpon>ChannelDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelGroupDataset.xsc">
+      <DependentUpon>ChannelGroupDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ChannelGroupDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChannelGroupDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ChannelGroupDataset.xss">
+      <DependentUpon>ChannelGroupDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ConfigParameterDataset.xsc">
+      <DependentUpon>ConfigParameterDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ConfigParameterDataset.xsd">
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConfigParameterDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datasets\ConfigParameterDataset.xss">
+      <DependentUpon>ConfigParameterDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ContentItemDataset.xsc">
+      <DependentUpon>ContentItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ContentItemDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContentItemDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ContentItemDataset.xss">
+      <DependentUpon>ContentItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ControlDefinitionDataset.xsc">
+      <DependentUpon>ControlDefinitionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ControlDefinitionDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlDefinitionDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ControlDefinitionDataset.xss">
+      <DependentUpon>ControlDefinitionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationClassificationDataset.xsc">
+      <DependentUpon>DestinationClassificationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationClassificationDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DestinationClassificationDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DestinationClassificationDataset.xss">
+      <DependentUpon>DestinationClassificationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationCollectionDataset.xsc">
+      <DependentUpon>DestinationCollectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationCollectionDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DestinationCollectionDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DestinationCollectionDataset.xss">
+      <DependentUpon>DestinationCollectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationCollectionMemberDataset.xsc">
+      <DependentUpon>DestinationCollectionMemberDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationCollectionMemberDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DestinationCollectionMemberDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DestinationCollectionMemberDataset.xss">
+      <DependentUpon>DestinationCollectionMemberDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationDataset.xsc">
+      <DependentUpon>DestinationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DestinationDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DestinationDataset.xss">
+      <DependentUpon>DestinationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationTypeDataset.xsc">
+      <DependentUpon>DestinationTypeDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DestinationTypeDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DestinationTypeDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DestinationTypeDataset.xss">
+      <DependentUpon>DestinationTypeDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\FormDefinitionDataset.xsc">
+      <DependentUpon>FormDefinitionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\FormDefinitionDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormDefinitionDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\FormDefinitionDataset.xss">
+      <DependentUpon>FormDefinitionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GpsRegionDataset.xsc">
+      <DependentUpon>GpsRegionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GpsRegionDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GpsRegionDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GpsRegionDataset.xss">
+    </None>
+    <None Include="Datasets\ItineraryDataset.xsc">
+      <DependentUpon>ItineraryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItineraryDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItineraryDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ItineraryDataset.xss">
+      <DependentUpon>ItineraryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItineraryDayDataset.xsc">
+      <DependentUpon>ItineraryDayDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItineraryDayDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItineraryDayDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ItineraryDayDataset.xss">
+      <DependentUpon>ItineraryDayDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItineraryDestinationDataset.xsc">
+      <DependentUpon>ItineraryDestinationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItineraryDestinationDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItineraryDestinationDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ItineraryDestinationDataset.xss">
+      <DependentUpon>ItineraryDestinationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\MasterAreaDataset.xsc">
+    </None>
+    <None Include="Datasets\MasterAreaDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterAreaDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\MasterAreaDataset.xss">
+    </None>
+    <None Include="Datasets\MySelectionDataset.xsc">
+      <DependentUpon>MySelectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\MySelectionDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MySelectionDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\MySelectionDataset.xss">
+      <DependentUpon>MySelectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\RecentDestinationDataset.xsc">
+    </None>
+    <None Include="Datasets\RecentDestinationDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RecentDestinationDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\RecentDestinationDataset.xss">
+    </None>
+    <None Include="Datasets\ThemeDataset.xsc">
+      <DependentUpon>ThemeDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ThemeDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ThemeDataset.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Nucleo.GoodGuide.Datasets.Datasets</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ThemeDataset.xss">
+      <DependentUpon>ThemeDataset.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

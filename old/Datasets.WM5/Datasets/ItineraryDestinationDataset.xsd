@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItineraryDestinationDataset" targetNamespace="http://tempuri.org/ItineraryDestinationDataset.xsd" xmlns:mstns="http://tempuri.org/ItineraryDestinationDataset.xsd" xmlns="http://tempuri.org/ItineraryDestinationDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItineraryDestinationDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ItineraryDestinationDataset" msprop:Generator_DataSetName="ItineraryDestinationDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ItineraryDestination" msprop:Generator_UserTableName="ItineraryDestination" msprop:Generator_RowDeletedName="ItineraryDestinationRowDeleted" msprop:Generator_RowChangedName="ItineraryDestinationRowChanged" msprop:Generator_RowClassName="ItineraryDestinationRow" msprop:Generator_RowChangingName="ItineraryDestinationRowChanging" msprop:Generator_RowEvArgName="ItineraryDestinationRowChangeEvent" msprop:Generator_RowEvHandlerName="ItineraryDestinationRowChangeEventHandler" msprop:Generator_TableClassName="ItineraryDestinationDataTable" msprop:Generator_TableVarName="tableItineraryDestination" msprop:Generator_RowDeletingName="ItineraryDestinationRowDeleting" msprop:Generator_TablePropName="ItineraryDestination">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItineraryDayId" msprop:Generator_UserColumnName="ItineraryDayId" msprop:Generator_ColumnVarNameInTable="columnItineraryDayId" msprop:Generator_ColumnPropNameInRow="ItineraryDayId" msprop:Generator_ColumnPropNameInTable="ItineraryDayIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DestinationId" msprop:Generator_UserColumnName="DestinationId" msprop:Generator_ColumnVarNameInTable="columnDestinationId" msprop:Generator_ColumnPropNameInRow="DestinationId" msprop:Generator_ColumnPropNameInTable="DestinationIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DestinationOrder" msprop:Generator_UserColumnName="DestinationOrder" msprop:Generator_ColumnVarNameInTable="columnDestinationOrder" msprop:Generator_ColumnPropNameInRow="DestinationOrder" msprop:Generator_ColumnPropNameInTable="DestinationOrderColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

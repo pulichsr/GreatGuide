@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical" >
+    <fragment
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    class="com.greatguide.ui.fragment.StatusBarFragment"
+	    tools:layout="@layout/fragment_statusbar" />
+    <fragment
+	    android:id="@+id/setup_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    class="com.greatguide.ui.fragment.Title"
+	    tools:layout="@layout/fragment_title" />
+    <fragment
+        android:id="@+id/tours_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.greatguide.ui.fragment.SetupFragment"
+        tools:layout="@layout/fragment_setup" />
+
+</LinearLayout>

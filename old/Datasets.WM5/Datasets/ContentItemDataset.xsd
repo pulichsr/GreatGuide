@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContentItemDataset" targetNamespace="http://tempuri.org/ContentItemDataset.xsd" xmlns:mstns="http://tempuri.org/ContentItemDataset.xsd" xmlns="http://tempuri.org/ContentItemDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContentItemDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ContentItemDataset" msprop:Generator_DataSetName="ContentItemDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ContentItem" msprop:Generator_UserTableName="ContentItem" msprop:Generator_RowDeletedName="ContentItemRowDeleted" msprop:Generator_RowChangedName="ContentItemRowChanged" msprop:Generator_RowClassName="ContentItemRow" msprop:Generator_RowChangingName="ContentItemRowChanging" msprop:Generator_RowEvArgName="ContentItemRowChangeEvent" msprop:Generator_RowEvHandlerName="ContentItemRowChangeEventHandler" msprop:Generator_TableClassName="ContentItemDataTable" msprop:Generator_TableVarName="tableContentItem" msprop:Generator_RowDeletingName="ContentItemRowDeleting" msprop:Generator_TablePropName="ContentItem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ContentTypeCode" msprop:Generator_UserColumnName="ContentTypeCode" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnContentTypeCode" msprop:Generator_ColumnPropNameInTable="ContentTypeCodeColumn" msprop:Generator_ColumnPropNameInRow="ContentTypeCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Filename" msprop:Generator_UserColumnName="Filename" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnFilename" msprop:Generator_ColumnPropNameInTable="FilenameColumn" msprop:Generator_ColumnPropNameInRow="Filename" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ChannelGroupId" msprop:Generator_UserColumnName="ChannelGroupId" msprop:Generator_ColumnVarNameInTable="columnChannelGroupId" msprop:Generator_ColumnPropNameInRow="ChannelGroupId" msprop:Generator_ColumnPropNameInTable="ChannelGroupIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ChannelContentId" msprop:Generator_UserColumnName="ChannelContentId" msprop:Generator_ColumnPropNameInRow="ChannelContentId" msprop:Generator_ColumnVarNameInTable="columnChannelContentId" msprop:Generator_ColumnPropNameInTable="ChannelContentIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="IsFillerContent" msprop:Generator_UserColumnName="IsFillerContent" msprop:Generator_ColumnVarNameInTable="columnIsFillerContent" msprop:Generator_ColumnPropNameInRow="IsFillerContent" msprop:Generator_ColumnPropNameInTable="IsFillerContentColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="DisplaySeq" msprop:Generator_UserColumnName="DisplaySeq" msprop:Generator_ColumnPropNameInRow="DisplaySeq" msprop:Generator_ColumnVarNameInTable="columnDisplaySeq" msprop:Generator_ColumnPropNameInTable="DisplaySeqColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

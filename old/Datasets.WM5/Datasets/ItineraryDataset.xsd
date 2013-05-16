@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItineraryDataset" targetNamespace="http://tempuri.org/ItineraryDataset.xsd" xmlns:mstns="http://tempuri.org/ItineraryDataset.xsd" xmlns="http://tempuri.org/ItineraryDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItineraryDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ItineraryDataset" msprop:Generator_DataSetName="ItineraryDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Itinerary" msprop:Generator_UserTableName="Itinerary" msprop:Generator_RowDeletedName="ItineraryRowDeleted" msprop:Generator_RowChangedName="ItineraryRowChanged" msprop:Generator_RowClassName="ItineraryRow" msprop:Generator_RowChangingName="ItineraryRowChanging" msprop:Generator_RowEvArgName="ItineraryRowChangeEvent" msprop:Generator_RowEvHandlerName="ItineraryRowChangeEventHandler" msprop:Generator_TableClassName="ItineraryDataTable" msprop:Generator_TableVarName="tableItinerary" msprop:Generator_RowDeletingName="ItineraryRowDeleting" msprop:Generator_TablePropName="Itinerary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnVarNameInTable="columnLastName" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_ColumnVarNameInTable="columnTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrivalDat" msprop:Generator_UserColumnName="ArrivalDat" msprop:Generator_ColumnVarNameInTable="columnArrivalDat" msprop:Generator_ColumnPropNameInRow="ArrivalDat" msprop:Generator_ColumnPropNameInTable="ArrivalDatColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DepartureDat" msprop:Generator_UserColumnName="DepartureDat" msprop:Generator_ColumnVarNameInTable="columnDepartureDat" msprop:Generator_ColumnPropNameInRow="DepartureDat" msprop:Generator_ColumnPropNameInTable="DepartureDatColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GracePeriod" msprop:Generator_UserColumnName="GracePeriod" msprop:nullValue="_throw" msprop:Generator_ColumnVarNameInTable="columnGracePeriod" msprop:Generator_ColumnPropNameInTable="GracePeriodColumn" msprop:Generator_ColumnPropNameInRow="GracePeriod" type="xs:short" minOccurs="0" />
+              <xs:element name="BookingReference" msprop:Generator_UserColumnName="BookingReference" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnBookingReference" msprop:Generator_ColumnPropNameInTable="BookingReferenceColumn" msprop:Generator_ColumnPropNameInRow="BookingReference" type="xs:string" minOccurs="0" />
+              <xs:element name="GeofenceData" msprop:Generator_UserColumnName="GeofenceData" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnGeofenceData" msprop:Generator_ColumnPropNameInTable="GeofenceDataColumn" msprop:Generator_ColumnPropNameInRow="GeofenceData" type="xs:string" minOccurs="0" />
+              <xs:element name="Branding1" msprop:Generator_UserColumnName="Branding1" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnBranding1" msprop:Generator_ColumnPropNameInTable="Branding1Column" msprop:Generator_ColumnPropNameInRow="Branding1" type="xs:string" minOccurs="0" />
+              <xs:element name="Branding2" msprop:Generator_UserColumnName="Branding2" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnBranding2" msprop:Generator_ColumnPropNameInTable="Branding2Column" msprop:Generator_ColumnPropNameInRow="Branding2" type="xs:string" minOccurs="0" />
+              <xs:element name="Branding3" msprop:Generator_UserColumnName="Branding3" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnBranding3" msprop:Generator_ColumnPropNameInTable="Branding3Column" msprop:Generator_ColumnPropNameInRow="Branding3" type="xs:string" minOccurs="0" />
+              <xs:element name="Culture" msprop:Generator_UserColumnName="Culture" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCulture" msprop:Generator_ColumnPropNameInTable="CultureColumn" msprop:Generator_ColumnPropNameInRow="Culture" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

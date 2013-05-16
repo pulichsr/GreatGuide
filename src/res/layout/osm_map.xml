@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:enabled="true"
+            android:layout_above="@+id/map_control_layout"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            />
+    <LinearLayout 
+        android:id="@+id/map_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+                android:id="@+id/zoomLevel"
+                android:layout_width="500dp"
+                android:layout_height="50dp"
+                android:text="Zoom: "
+                />
+        <Button
+            android:id="@+id/tourUIZoomIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Zoom In"/>
+        <Button
+            android:id="@+id/tourUIZoomOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Zoom out"/>
+        
+    </LinearLayout>
+</RelativeLayout>

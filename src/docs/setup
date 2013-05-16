@@ -1,0 +1,7 @@
+On each device you need to run the following commands... this will setup the device to run the Great Guide app only by blocking the user into the app:
+
+adb shell
+cd system/app
+mv SystemUI.apk SystemUI.apkxx
+exit
+adb shell reboot

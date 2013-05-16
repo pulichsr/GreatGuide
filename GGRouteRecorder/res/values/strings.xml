@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Great Guide Route Recorder</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="waypoint">Way Point</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="sdcardpath"></string>
+
+</resources>
